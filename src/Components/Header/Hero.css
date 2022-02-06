@@ -1,0 +1,13 @@
+.header_img {
+    width: 550px;
+    height: 893px;
+
+}
+
+@media (max-width: 1440px) {
+    .header_img {
+        width: 431px;
+        height: 700px;
+    }
+
+}

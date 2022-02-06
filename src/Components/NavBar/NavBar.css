@@ -1,0 +1,78 @@
+.nav {
+    display: flex;
+    grid-area: n;
+    justify-content: center;
+
+}
+
+* {
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+}
+
+.NavBar_list {
+    margin-right: 20px;
+    margin-top: 16px;
+    font-size: 25px;
+    line-height: 14px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+
+.btn-1 {
+    letter-spacing: 0;
+
+}
+
+.btn-1:hover,
+.btn-1:active {
+    letter-spacing: 5px;
+
+}
+
+.btn-1:after,
+.btn-1:before {
+    backface-visibility: hidden;
+    border: 1px solid white;
+    bottom: auto;
+    content: " ";
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.btn-1:hover:after,
+.btn-1:hover:before {
+    backface-visibility: hidden;
+    border-color: #0828B6;
+    transition: width 350ms ease-in-out;
+    width: 95%;
+
+}
+
+.btn-1:hover:before {
+    top: 0;
+    bottom: 0;
+    width: 95%;
+
+}
+
+@media (max-width: 1440px) {
+    .NavBar_list {
+        margin-right: 20px;
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 14px;
+        font-weight: bold;
+    }
+
+}
