@@ -1,21 +1,22 @@
-import './NavBar.css'
+import classes from './NavBar.module.css';
+
 
 const NavBar = () => {
     return (
-        <div className="nav">
-            <div className ="NavBar_list btn-1">
+        <div className={classes.nav}>
+            <div className={`${classes.NavBar} ${classes.btn}`}>
                     HOME
             </div>
-            <div className ="NavBar_list btn-1">
+            <div className={`${classes.NavBar} ${classes.btn}`}>
                     SHOP
             </div>
-            <div className ="NavBar_list btn-1">
+            <div className={`${classes.NavBar} ${classes.btn}`}>
                     ABOUT
             </div>
-            <div className ="NavBar_list btn-1">
+            <div className={`${classes.NavBar} ${classes.btn}`}>
                     GALLERY
             </div>
-            <div className ="NavBar_list btn-1">
+            <div className={`${classes.NavBar} ${classes.btn}`}>
                     CONTACT
             </div>
         </div>

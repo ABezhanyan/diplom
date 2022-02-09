@@ -1,0 +1,42 @@
+.content{
+    grid-area: nb;
+
+    margin-top: 230px;
+}
+
+.text {
+    display: flex;
+    padding-bottom: 12px;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 52px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #131313;
+    margin: auto;
+}
+
+.text-two {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #555555;
+    padding-bottom: 12px;
+}
+
+.button {
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 173px;
+    height: 41px;
+    background: #004A30;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    color: #FFFFFF;
+}

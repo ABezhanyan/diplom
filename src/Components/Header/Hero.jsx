@@ -1,10 +1,10 @@
-import './Hero.css'
-import hero from '../img/Hero.svg';
+import classes from './Hero.module.css'
+import hero from '../img/Hero.svg'
 
 const Hero = () => {
     return (
-        <div className="header">
-            <img src={hero} className="header_img" alt=""/>
+        <div className={classes.header}>
+            <img src={hero} className={classes.img} alt=""/>
         </div>
     )
 }

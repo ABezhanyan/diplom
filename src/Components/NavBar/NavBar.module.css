@@ -1,18 +1,12 @@
 .nav {
-    display: flex;
     grid-area: n;
-    justify-content: center;
+    display: flex;
+    justify-content: end;
 
 }
 
-* {
-    box-sizing: inherit;
-    transition-property: all;
-    transition-duration: .6s;
-    transition-timing-function: ease;
-}
 
-.NavBar_list {
+.NavBar {
     margin-right: 20px;
     margin-top: 16px;
     font-size: 25px;
@@ -22,23 +16,27 @@
     cursor: pointer;
     text-decoration: none;
     text-transform: uppercase;
+    box-sizing: inherit;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
 
 }
 
 
-.btn-1 {
+.btn {
     letter-spacing: 0;
 
 }
 
-.btn-1:hover,
-.btn-1:active {
+.btn:hover,
+.btn:active {
     letter-spacing: 5px;
 
 }
 
-.btn-1:after,
-.btn-1:before {
+.btn:after,
+.btn:before {
     backface-visibility: hidden;
     border: 1px solid white;
     bottom: auto;
@@ -50,8 +48,8 @@
     width: 0;
 }
 
-.btn-1:hover:after,
-.btn-1:hover:before {
+.btn:hover:after,
+.btn:hover:before {
     backface-visibility: hidden;
     border-color: #0828B6;
     transition: width 350ms ease-in-out;
@@ -59,7 +57,7 @@
 
 }
 
-.btn-1:hover:before {
+.btn:hover:before {
     top: 0;
     bottom: 0;
     width: 95%;
@@ -67,7 +65,7 @@
 }
 
 @media (max-width: 1440px) {
-    .NavBar_list {
+    .NavBar {
         margin-right: 20px;
         margin-top: 10px;
         font-size: 18px;

@@ -1,11 +1,17 @@
-.imgLogo {
+.img {
     width: 180px;
 }
 
 @media (max-width: 1440px) {
-    .imgLogo {
+    .img {
         width: 125px;
         padding-top: 5px;
     }
     
+}
+
+.content {
+    grid-area: c;
+    display: flex;
+    justify-content: center;
 }
