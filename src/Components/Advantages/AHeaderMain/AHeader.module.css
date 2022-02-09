@@ -1,0 +1,16 @@
+.header_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #131313;
+}
+
+.header {
+    grid-area: A;
+    margin-top: 480px;
+}
+

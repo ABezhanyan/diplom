@@ -1,7 +1,7 @@
 .nav {
     grid-area: n;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 
 }
 

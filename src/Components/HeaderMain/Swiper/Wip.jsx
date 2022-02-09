@@ -13,7 +13,7 @@ import {EffectCreative, Pagination} from "swiper";
 
 export default function Wip() {
     return (
-        <>
+        <div className="General">
             <Swiper
                 grabCursor={true}
                 effect={"creative"}
@@ -34,7 +34,7 @@ export default function Wip() {
                 <SwiperSlide><button className="button_slide1">ADD TO CART</button></SwiperSlide>
                 <SwiperSlide><button className="button_slide1">ADD TO CART</button></SwiperSlide>
             </Swiper>
-        </>
+        </div>
     );
 }
 

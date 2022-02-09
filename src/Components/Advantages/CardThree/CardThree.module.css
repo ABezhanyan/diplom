@@ -1,0 +1,13 @@
+.CardThree {
+    grid-area: Three;
+    width: 350px;
+    height: 320px;
+    background: #FCFCFC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+}
+
+.img {
+    display: flex;
+    margin: auto;
+}

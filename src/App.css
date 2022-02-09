@@ -1,15 +1,22 @@
 .ShopFood {
     display: grid;
-    grid-template-columns: 1fr 0.8fr 1fr;
+    grid-template-columns: 0.90fr 0.40fr 0.60fr 0.56fr 0.2fr;
     grid-template-rows: 0.1fr auto;
     gap: 0 0;
     grid-template-areas:
-    "n c h"
-    "w nb h";
-
+    "n n c h h"
+    "w nb nb h h";
 }
 
-
+.Advantages {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 60px 20px;
+    grid-template-areas:
+    "A A A A"
+    "One Two Three Four";
+}
 
 
 *{

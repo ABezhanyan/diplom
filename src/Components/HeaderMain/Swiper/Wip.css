@@ -2,27 +2,32 @@
     width: 327px;
     height: 422px;
     border-radius: 18px;
-    right: 46px;
-    top: 111px;
-    grid-area: w;
+
 }
 
+.General {
+    grid-area: w;
+    border-radius: 18px;
+    margin-top: 111px;
+    margin-left: 100px;
+    justify-self: center;
+}
 @media (max-width: 1440px) {
     .swiper  {
-        right: 9px;
+        right: 0;
     }
 
 }
 
 @media (max-width: 1360px) {
     .swiper  {
-        right: 9px;
+        right: 0;
     }
 
 }
 
 .mySwiper {
-
+    justify-self: end;
 }
 
 .swiper-slide {
@@ -39,7 +44,7 @@
 
 .swiper-slide:nth-child(1n) {
     background-color: #FCFCFC;
-    background-image: url("/src/Components/img/slide.jpg");
+    background-image: url("/src/Components/HeaderMain/img/slide.jpg");
     background-repeat: no-repeat;
 }
 
@@ -52,13 +57,13 @@
 
 .swiper-slide:nth-child(2n) {
     background-color: #FCFCFC;
-    background-image: url("/src/Components/img/strawberry.jpg");
+    background-image: url("/src/Components/HeaderMain/img/strawberry.jpg");
     background-repeat: no-repeat;
 }
 
 .swiper-slide:nth-child(3n) {
     background-color: #FCFCFC ;
-    background-image: url("/src/Components/img/Limon.jpg");
+    background-image: url("/src/Components/HeaderMain/img/Limon.jpg");
     background-repeat: no-repeat;
 }
 

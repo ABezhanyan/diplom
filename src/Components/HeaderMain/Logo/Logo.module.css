@@ -13,5 +13,5 @@
 .content {
     grid-area: c;
     display: flex;
-    justify-content: center;
+    justify-content: start;
 }
