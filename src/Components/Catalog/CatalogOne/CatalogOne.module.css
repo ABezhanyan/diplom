@@ -1,0 +1,58 @@
+.Card {
+    grid-area: FrutOne;
+    width: 474px;
+    height: 550px;
+    background: #FCFCFC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+    justify-self: end;
+}
+
+.Card:hover {
+
+}
+
+.img {
+    border-radius: 18px;
+}
+
+.text {
+    padding-top: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 23px;
+    color: #131313;
+}
+
+.text_two {
+    padding-top: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.text_three {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.btn {
+    width: 180px;
+    height: 40px;
+    background: #555555;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

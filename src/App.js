@@ -9,6 +9,16 @@ import CardOne from "./Components/Advantages/CardOne/CardOne";
 import CardTwo from "./Components/Advantages/CardTwo/CardTwo";
 import CardThree from "./Components/Advantages/CardThree/CardThree";
 import CardFour from "./Components/Advantages/CardFour/CardFour";
+import CHeader from "./Components/Catalog/CHeader/CHeader";
+import CatalogOne from "./Components/Catalog/CatalogOne/CatalogOne";
+import CatalogTwo from "./Components/Catalog/CatalogTwo/CatalogTwo";
+import CatalogThree from "./Components/Catalog/CatalogThree/CatalogThree";
+import CatalogFour from "./Components/Catalog/CatalogFour/CatalogFour";
+import CatalogFive from "./Components/Catalog/CatalogFive/CatalogFive";
+import CatalogSix from "./Components/Catalog/CatalogSix/CatalogSix";
+import CatalogSeven from "./Components/Catalog/CatalogSeven/CatalogSeven";
+import CatalogEight from "./Components/Catalog/CatalogEight/CatalogEight";
+import CatalogNine from "./Components/Catalog/CatalogNine/CatalogNine";
 
 
 
@@ -28,6 +38,18 @@ const App = () => {
             <CardTwo />
             <CardThree />
             <CardFour />
+        </div>
+        <div className="Catalog">
+            <CHeader />
+            <CatalogOne />
+            <CatalogTwo />
+            <CatalogThree />
+            <CatalogFour />
+            <CatalogFive />
+            <CatalogSix />
+            <CatalogSeven />
+            <CatalogEight />
+            <CatalogNine />
         </div>
     </div>
   );
