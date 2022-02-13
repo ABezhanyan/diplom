@@ -22,6 +22,8 @@ import CatalogNine from "./Components/Catalog/CatalogNine/CatalogNine";
 import AllProducts from "./Components/Catalog/CatalogAllProducts/AllProducts";
 import FreshImg from "./Components/Fresh/FreshImg/FreshImg";
 import FreshText from "./Components/Fresh/FreshText/FreshText";
+import Revives from "./Components/Reviews/Revives";
+
 
 
 
@@ -58,6 +60,9 @@ const App = () => {
         <div className="Fresh">
             <FreshImg />
             <FreshText />
+        </div>
+        <div className="Reviews">
+            <Revives />
         </div>
     </div>
   );

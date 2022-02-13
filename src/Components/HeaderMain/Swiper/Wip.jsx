@@ -1,19 +1,20 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
+import Sl from "../img/slide.jpg"
 
-import "./Wip.css";
+import classes from "./Wip.module.css";
 
 // import required modules
 import {EffectCreative, Pagination} from "swiper";
 
 export default function Wip() {
     return (
-        <div className="General">
+        <div className={classes.gen}>
             <Swiper
                 grabCursor={true}
                 effect={"creative"}
@@ -28,11 +29,26 @@ export default function Wip() {
                 }}
                 pagination={true}
                 modules={[EffectCreative, Pagination]}
-                className="mySwiper"
+                className={classes.mySwiper}
             >
-                <SwiperSlide><button className="button_slide1">ADD TO CART</button></SwiperSlide>
-                <SwiperSlide><button className="button_slide1">ADD TO CART</button></SwiperSlide>
-                <SwiperSlide><button className="button_slide1">ADD TO CART</button></SwiperSlide>
+                <SwiperSlide className={classes.sv}>
+                    <div className={classes.Sl}>
+                        <img className={classes.img} src={Sl}/>
+                        <button className={classes.button_slide1}>ADD TO CART</button>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className={classes.sv}>
+                    <div className={classes.Sl}>
+                        <img className={classes.img} src={Sl}/>
+                        <button className={classes.button_slide1}>ADD TO CART</button>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className={classes.sv}>
+                    <div className={classes.Sl}>
+                        <img className={classes.img} src={Sl}/>
+                        <button className={classes.button_slide1}>ADD TO CART</button>
+                    </div>
+                </SwiperSlide>
             </Swiper>
         </div>
     );
