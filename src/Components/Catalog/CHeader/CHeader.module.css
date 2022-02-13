@@ -11,4 +11,16 @@
 
 .header {
     grid-area: A;
+    margin-top: 80px;
+}
+
+@media (max-width: 1440px) {
+    .header {
+        margin-top: 80px;
+    }
+
+    .header_text {
+        font-size: 30px;
+    }
+
 }

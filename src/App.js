@@ -19,12 +19,15 @@ import CatalogSix from "./Components/Catalog/CatalogSix/CatalogSix";
 import CatalogSeven from "./Components/Catalog/CatalogSeven/CatalogSeven";
 import CatalogEight from "./Components/Catalog/CatalogEight/CatalogEight";
 import CatalogNine from "./Components/Catalog/CatalogNine/CatalogNine";
+import AllProducts from "./Components/Catalog/CatalogAllProducts/AllProducts";
+import FreshImg from "./Components/Fresh/FreshImg/FreshImg";
+import FreshText from "./Components/Fresh/FreshText/FreshText";
 
 
 
 const App = () => {
   return (
-    <div>
+    <div className="mom">
         <div className="ShopFood">
             <NavBar />
             <Logo />
@@ -50,6 +53,11 @@ const App = () => {
             <CatalogSeven />
             <CatalogEight />
             <CatalogNine />
+            <AllProducts />
+        </div>
+        <div className="Fresh">
+            <FreshImg />
+            <FreshText />
         </div>
     </div>
   );

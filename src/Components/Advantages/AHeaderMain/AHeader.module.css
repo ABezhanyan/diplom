@@ -7,10 +7,23 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #131313;
+    transition: all 0.6s ease-in-out;
 }
 
 .header {
     grid-area: A;
-    margin-top: 400px;
+    margin-top: 150px;
+}
+
+@media (max-width: 1440px) {
+    .header_text {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .header {
+        margin-top: 150px;
+    }
+
 }
 

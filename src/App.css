@@ -1,17 +1,21 @@
+.mom {
+    background: WhiteSmoke;
+}
+
 .ShopFood {
     display: grid;
-    grid-template-columns: 0.90fr 0.40fr 0.60fr 0.56fr 0.2fr;
-    grid-template-rows: 0.1fr auto;
+    grid-template-columns: 1fr 0.45fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
     gap: 0 0;
     grid-template-areas:
-    "n n c h h"
-    "w nb nb h h";
+    "n n c h"
+    "w w nb h";
 }
 
 .Advantages {
     display: grid;
     grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
     gap: 60px 20px;
     grid-template-areas:
     "A A A A"
@@ -22,12 +26,23 @@
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
     grid-template-rows: 0.1fr 1fr;
-    gap: 60px 20px;
+    gap: 30px 20px;
     grid-template-areas:
     "A A A"
     "FrutOne FrutTwo FrutThree"
     "FrutFour FrutFive FrutSix"
-    "FrutSeven FrutEight FrutNine";
+    "FrutSeven FrutEight FrutNine"
+    "btn btn btn";
+}
+
+.Fresh {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "FreshImg FreshText";
+    margin-top: 80px;
 }
 
 

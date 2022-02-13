@@ -7,7 +7,15 @@
     border-radius: 18px;
     justify-self: end;
     cursor: pointer;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+@media (max-width: 1440px) {
+    .CardTwo {
+        width: 230px;
+        height: 320px;
+    }
+
 }
 
 .CardTwo:hover {

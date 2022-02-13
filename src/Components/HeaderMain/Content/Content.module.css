@@ -1,7 +1,7 @@
 .content{
     grid-area: nb;
     margin-top: 230px;
-    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .text {
@@ -9,19 +9,21 @@
     padding-bottom: 12px;
     font-style: normal;
     font-weight: 300;
-    font-size: 58px;
+    font-size: 50px;
     line-height: 52px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #131313;
+    text-align: start;
+
 
 }
 
-.text-two {
+.text_two {
     font-style: normal;
     font-weight: normal;
     font-size: 19px;
-    line-height: 19px;
+    line-height: 25px;
     letter-spacing: 0.02em;
     color: #555555;
     padding-bottom: 12px;
@@ -38,4 +40,23 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     color: #FFFFFF;
+}
+
+@media (max-width: 1440px) {
+    .content  {
+        margin-top: 180px;
+        margin-left: 30px;
+    }
+
+    .text {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 52px;
+    }
+
+    .text_two {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
 }

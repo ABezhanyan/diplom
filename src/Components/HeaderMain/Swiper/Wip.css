@@ -1,6 +1,6 @@
 .swiper {
     width: 327px;
-    height: 422px;
+    height: 450px;
     border-radius: 18px;
 
 }
@@ -12,19 +12,9 @@
     margin-left: 100px;
     justify-self: center;
 }
-@media (max-width: 1440px) {
-    .swiper  {
-        right: 0;
-    }
 
-}
 
-@media (max-width: 1360px) {
-    .swiper  {
-        right: 0;
-    }
 
-}
 
 .mySwiper {
     justify-self: end;
@@ -95,3 +85,19 @@
     background-color: rgb(54, 94, 77);
 }
 
+@media (max-width: 1440px) {
+    .swiper {
+        width: 250px;
+        height: 400px;
+        justify-content: center;
+    }
+
+    .General {
+        justify-self: center;
+    }
+
+    .swiper-slide:nth-child(1n) {
+        background-size: 250px;
+    }
+
+}
