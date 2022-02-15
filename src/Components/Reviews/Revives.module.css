@@ -1,0 +1,70 @@
+.gen {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.mySwiper {
+    height: 435px;
+}
+
+.RevS {
+    background-image: url("./img/reviews.jpg");
+    background-repeat: no-repeat;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+
+.text_two {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.ellipse {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.img {
+    width: 70px;
+}
+
+.name {
+    margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 19px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.post {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #F0FFFA;
+}
+
+
