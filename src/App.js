@@ -23,6 +23,11 @@ import AllProducts from "./Components/Catalog/CatalogAllProducts/AllProducts";
 import FreshImg from "./Components/Fresh/FreshImg/FreshImg";
 import FreshText from "./Components/Fresh/FreshText/FreshText";
 import Revives from "./Components/Reviews/Revives";
+import SubText from "./Components/Subscribe/SubscribeText/SubText";
+import SubForm from "./Components/Subscribe/SubscribeForm/SubForm";
+
+
+
 
 
 
@@ -63,6 +68,10 @@ const App = () => {
         </div>
         <div className="Reviews">
             <Revives />
+        </div>
+        <div className="Subscribe">
+            <SubText />
+            <SubForm />
         </div>
     </div>
   );
