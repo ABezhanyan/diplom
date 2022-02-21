@@ -1,0 +1,11 @@
+.contact_header {
+    grid-area: ContactH;
+    padding-top: 50px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

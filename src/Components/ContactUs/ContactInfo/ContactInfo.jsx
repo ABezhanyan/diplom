@@ -1,0 +1,34 @@
+import classes from "./ContactInfo.module.css";
+
+const ContactInfo = () => {
+    return (
+        <div className={classes.ContactInfo}>
+            <div className={classes.address}>
+                Address
+            </div>
+            <div className={classes.text}>
+                Apt 4B<br/>
+                2311 North Los Robles Avenue
+            </div>
+            <div className={classes.phone}>
+                Phone
+            </div>
+            <div className={classes.text}>
+                +7 924 488 32 20<br/>
+                +7 924 522 42 30
+            </div>
+            <div className={classes.e_mail}>
+                E-mail
+            </div>
+            <div className={classes.text}>
+                organicfood@info.ru
+            </div>
+            <div className={classes.text}>
+                Lectus a odio tristique viverra justo. Magna diam dignissim lectus cursus volutpat purus, erat cras. Turpis ridiculus quis lobortis ut enim ut elementum. Feugiat sit nunc, morbi lorem faucibus.
+            </div>
+        </div>
+    )
+
+}
+
+export default ContactInfo;

@@ -1,0 +1,42 @@
+.HeaderMain {
+    grid-area: ContOrgTextSocial;
+    width: 400px;
+}
+
+.header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 300px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #CCCCCC;
+}
+
+.text {
+    width: 300px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #AAAAAA;
+
+}
+
+.social {
+    display: flex;
+    margin-top: 25px;
+
+}
+
+.img {
+    margin-right: 29px;
+}
+
+.img_size {
+    width: 20px;
+    height: 20px;
+}

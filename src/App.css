@@ -39,16 +39,67 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 0px;
+    gap: 0 0;
     grid-template-areas:
     "FreshImg FreshText";
     margin-top: 80px;
 }
 
-.Reviews {
+.Subscribe {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    gap: 0 0;
+    grid-template-areas:
+    "SubText"
+    "SubForm";
+}
+
+.ContactUS {
 
 }
 
+
+.ContactUS_one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    gap: 0 0;
+    grid-template-areas:
+    "ContactH ContactH"
+    "ContactIn ContactForm";
+    margin-top: 50px;
+    height: 607px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15)), url(/src/Components/ContactUs/Img/contact.jpg) no-repeat ;
+    background-size: auto;
+}
+
+.ContactUS_two {
+    display: flex;
+    display: grid;
+    justify-content: center;
+    height: 395px;
+    background: #131313;
+}
+
+.ContactUS_coll {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr 0.9fr 0.2fr;
+    grid-template-rows: 1fr;
+    gap: 0 0;
+    grid-template-areas:
+    "ContOrgTextSocial ContactMainMenu ContactUS_Text ContactUP";
+    justify-content: center;
+    border-bottom: solid;
+    border-color: #666666;
+    border-bottom-width: 1px;
+
+}
+
+.ContactAll {
+    margin: auto;
+}
 
 *{
     padding: 0;
@@ -65,4 +116,11 @@ ul {
     /* Отступ слева в браузере IE и Opera */
     padding-left: 0;
     /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+
+@media (max-width: 1440px) {
+    .ContactUS {
+        background-size: 1440px;
+    }
 }

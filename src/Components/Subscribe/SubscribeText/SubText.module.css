@@ -21,5 +21,6 @@
 }
 
 .SubText {
+    grid-area: SubText;
     margin-top: 50px;
 }

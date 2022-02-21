@@ -25,6 +25,14 @@ import FreshText from "./Components/Fresh/FreshText/FreshText";
 import Revives from "./Components/Reviews/Revives";
 import SubText from "./Components/Subscribe/SubscribeText/SubText";
 import SubForm from "./Components/Subscribe/SubscribeForm/SubForm";
+import ContactHeader from "./Components/ContactUs/ContactHeader/ContactHeader";
+import ContactInfo from "./Components/ContactUs/ContactInfo/ContactInfo";
+import ContactForm from "./Components/ContactUs/ContactForm/ContactForm";
+import ContactOrganicText_Social from "./Components/ContactUs/ContactOrganicText/ContactOrganicText_Social";
+import ContactMainMenu from "./Components/ContactUs/ContactMainMenu/ContactMainMenu";
+import ContactUS_Text from "./Components/ContactUs/ContactUS_Text/ContactUS_Text";
+import ContactUP from "./Components/ContactUs/ContactUP/ContactUP";
+import All from "./Components/ContactUs/All2022/All";
 
 
 
@@ -72,6 +80,24 @@ const App = () => {
         <div className="Subscribe">
             <SubText />
             <SubForm />
+        </div>
+        <div className="ContactUS">
+           <div className="ContactUS_one">
+               <ContactHeader />
+               <ContactInfo />
+               <ContactForm />
+           </div>
+            <div className="ContactUS_two">
+                <div className="ContactUS_coll">
+                    <ContactOrganicText_Social />
+                    <ContactMainMenu />
+                    <ContactUS_Text />
+                    <ContactUP />
+                </div>
+                <div className="ContactAll">
+                    <All />
+                </div>
+            </div>
         </div>
     </div>
   );
