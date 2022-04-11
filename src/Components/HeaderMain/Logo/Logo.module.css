@@ -7,17 +7,9 @@
 .content {
     grid-area: c;
     display: flex;
-    justify-content: center;
 }
 
 @media (max-width: 1440px) {
-    .img {
-        width: 125px;
-        padding-top: 5px;
-    }
 
-    .content {
-        justify-content: center;
-    }
 
 }

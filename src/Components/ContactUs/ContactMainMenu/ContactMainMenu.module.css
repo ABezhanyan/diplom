@@ -61,10 +61,7 @@
 
 .btn:hover:after,
 .btn:hover:before {
-    backface-visibility: hidden;
-    border-color: #0828B6;
-    transition: width 350ms ease-in-out;
-    width: 100%;
+
 
 }
 

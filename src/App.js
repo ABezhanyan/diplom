@@ -22,7 +22,7 @@ import CatalogNine from "./Components/Catalog/CatalogNine/CatalogNine";
 import AllProducts from "./Components/Catalog/CatalogAllProducts/AllProducts";
 import FreshImg from "./Components/Fresh/FreshImg/FreshImg";
 import FreshText from "./Components/Fresh/FreshText/FreshText";
-import Revives from "./Components/Reviews/Revives";
+import Revives from "./Components/Reviews/Review/Revives";
 import SubText from "./Components/Subscribe/SubscribeText/SubText";
 import SubForm from "./Components/Subscribe/SubscribeForm/SubForm";
 import ContactHeader from "./Components/ContactUs/ContactHeader/ContactHeader";
@@ -33,7 +33,17 @@ import ContactMainMenu from "./Components/ContactUs/ContactMainMenu/ContactMainM
 import ContactUS_Text from "./Components/ContactUs/ContactUS_Text/ContactUS_Text";
 import ContactUP from "./Components/ContactUs/ContactUP/ContactUP";
 import All from "./Components/ContactUs/All2022/All";
-
+import {Route, Routes} from "react-router";
+import {BrowserRouter} from "react-router-dom"
+import Gen from "./Components/HeaderMain/HeaderMain";
+import Advantages from "./Components/Advantages/Advantages";
+import HeaderMain from "./Components/HeaderMain/HeaderMain";
+import Catalog from "./Components/Catalog/Catalog";
+import Fresh from "./Components/Fresh/Fresh";
+import Reviews from "./Components/Reviews/Reviews";
+import Subscribe from "./Components/Subscribe/Subscribe";
+import ContactUs from "./Components/ContactUs/ContactUs";
+import HeaderShop from "./Components/HeaderShop/HeaderShop";
 
 
 
@@ -42,64 +52,51 @@ import All from "./Components/ContactUs/All2022/All";
 
 const App = () => {
   return (
-    <div className="mom">
-        <div className="ShopFood">
-            <NavBar />
-            <Logo />
-            <Hero />
-            <Wip />
-            <Content />
-        </div>
-        <div className="Advantages">
-            <AHeader />
-            <CardOne />
-            <CardTwo />
-            <CardThree />
-            <CardFour />
-        </div>
-        <div className="Catalog">
-            <CHeader />
-            <CatalogOne />
-            <CatalogTwo />
-            <CatalogThree />
-            <CatalogFour />
-            <CatalogFive />
-            <CatalogSix />
-            <CatalogSeven />
-            <CatalogEight />
-            <CatalogNine />
-            <AllProducts />
-        </div>
-        <div className="Fresh">
-            <FreshImg />
-            <FreshText />
-        </div>
-        <div className="Reviews">
-            <Revives />
-        </div>
-        <div className="Subscribe">
-            <SubText />
-            <SubForm />
-        </div>
-        <div className="ContactUS">
-           <div className="ContactUS_one">
-               <ContactHeader />
-               <ContactInfo />
-               <ContactForm />
+   <BrowserRouter>
+       <div className="mom">
+           <div>
+               <Routes>
+                  <Route path="/" element={<HeaderMain />}></Route>
+               </Routes>
+               <Routes>
+                   <Route path="/shop" element={<HeaderShop />}></Route>
+               </Routes>
            </div>
-            <div className="ContactUS_two">
-                <div className="ContactUS_coll">
-                    <ContactOrganicText_Social />
-                    <ContactMainMenu />
-                    <ContactUS_Text />
-                    <ContactUP />
-                </div>
-                <div className="ContactAll">
-                    <All />
-                </div>
-            </div>
-        </div>
-    </div>
+           <div>
+               <Routes>
+                   <Route path="/" element={<Advantages />}></Route>
+               </Routes>
+           </div>
+           <div>
+               <Routes>
+                   <Route path="/" element={<Catalog />}></Route>
+               </Routes>
+               <Routes>
+                   <Route path="/shop" element={<Catalog />}></Route>
+               </Routes>
+           </div>
+           <div>
+               <Routes>
+                   <Route path="/" element={<Fresh />}></Route>
+               </Routes>
+           </div>
+           <div>
+               <Routes>
+                   <Route path="/" element={<Reviews />}></Route>
+               </Routes>
+           </div>
+           <div>
+               <Routes>
+                   <Route path="/" element={<Subscribe />}></Route>
+               </Routes>
+           </div>
+           <div>
+               <Routes>
+                   <Route path="/" element={<ContactUs />}></Route>
+               </Routes>
+           </div>
+       </div>
+   </BrowserRouter>
   );
 }
 

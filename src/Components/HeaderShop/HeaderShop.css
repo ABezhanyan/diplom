@@ -1,0 +1,42 @@
+header {
+    width: 100%;
+    background: white;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.05);
+    height: 90px;
+    position: fixed;
+    transition: all 0.7s ease;
+    z-index:2
+
+}
+
+header.sticky {
+    width: 100%;
+    background: white;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.05);
+    height: 70px;
+    position: fixed;
+    transition: all 0.7s ease;
+    z-index:2
+
+}
+
+.img {
+    width: 180px;
+    transition: all 0.7s ease;
+}
+
+.img.sticky {
+    width: 130px;
+    transition: all 0.7s ease;
+}
+
+.nav {
+    margin-top: 16px;
+    transition: all 0.7s ease;
+}
+
+.nav.sticky {
+    margin-top: 8px;
+    transition: all 0.7s ease;
+
+}

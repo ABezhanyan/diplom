@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 
 import classes from "./Revives.module.css";
-import ellipse from "./img/Ellipse.svg"
+import ellipse from "../img/Ellipse.svg"
 
 // import required modules
 import { EffectFade, Navigation, Pagination } from "swiper";

@@ -1,7 +1,11 @@
+
 .Card {
     grid-area: FrutEight;
-    width: 474px;
-    height: 550px;
+    justify-self: center;
+    /*width: 474px;*/
+    /*height: 550px;*/
+    width: 313px;
+    height: 460px;
     background: #FCFCFC;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     border-radius: 18px;
@@ -14,6 +18,8 @@
 
 .img {
     border-radius: 18px;
+    width: 313px;
+    height: 259px;
 }
 
 .text {
@@ -57,16 +63,20 @@
     color: #FFFFFF;
 }
 
-@media (max-width: 1440px) {
-    .Card {
-        width: 313px;
-        height: 460px;
-    }
 
-    .img {
-        border-radius: 18px;
-        width: 313px;
-        height: 259px;
-    }
 
-}
+
+
+/*@media (max-width: 1440px) {*/
+/*    .Card {*/
+/*        !*width: 313px;*!*/
+/*        !*height: 460px;*!*/
+/*    }*/
+
+/*    .img {*/
+/*        !*border-radius: 18px;*!*/
+/*        !*width: 313px;*!*/
+/*        !*height: 259px;*!*/
+/*    }*/
+
+/*}*/

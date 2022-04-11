@@ -1,4 +1,4 @@
-import classes from "./CHeader.module.css";
+import classes from "./CHeader.module.scss";
 
 const CHeader = () => {
     return (

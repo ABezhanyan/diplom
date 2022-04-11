@@ -1,15 +1,16 @@
 .content{
     grid-area: nb;
-    margin-top: 230px;
-    margin-right: 80px;
+    margin-top: 150px;
+
 }
 
 .text {
+    width: 500px;
     display: flex;
     padding-bottom: 12px;
     font-style: normal;
     font-weight: 300;
-    font-size: 50px;
+    font-size: 32px;
     line-height: 52px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -20,10 +21,11 @@
 }
 
 .text_two {
+    width: 390px;
     font-style: normal;
     font-weight: normal;
-    font-size: 19px;
-    line-height: 25px;
+    font-size: 12px;
+    line-height: 20px;
     letter-spacing: 0.02em;
     color: #555555;
     padding-bottom: 12px;
@@ -45,7 +47,8 @@
 @media (max-width: 1440px) {
     .content  {
         margin-top: 180px;
-        margin-left: 30px;
+        margin-left: 250px;
+
     }
 
     .text {

@@ -2,25 +2,17 @@
     background: WhiteSmoke;
 }
 
-.ShopFood {
-    display: grid;
-    grid-template-columns: 1fr 0.45fr 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    gap: 0 0;
-    grid-template-areas:
-    "n n c h"
-    "w w nb h";
-}
+/*.ShopFood {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr 0.45fr 1fr 1fr;*/
+/*    grid-template-rows: 0.1fr 1fr;*/
+/*    gap: 0 0;*/
+/*    grid-template-areas:*/
+/*    "n n c h"*/
+/*    "w w nb h";*/
+/*}*/
 
-.Advantages {
-    display: grid;
-    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    gap: 60px 20px;
-    grid-template-areas:
-    "A A A A"
-    "One Two Three Four";
-}
+
 
 .Catalog {
     display: grid;
@@ -33,6 +25,9 @@
     "FrutFour FrutFive FrutSix"
     "FrutSeven FrutEight FrutNine"
     "btn btn btn";
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .Fresh {
@@ -73,6 +68,10 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15),
     rgba(0, 0, 0, 0.15)), url(/src/Components/ContactUs/Img/contact.jpg) no-repeat ;
     background-size: auto;
+}
+
+.ContactUS_one path {
+
 }
 
 .ContactUS_two {

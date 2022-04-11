@@ -6,11 +6,11 @@
 .button_slide1 {
     display: flex;
     cursor: pointer;
-    margin-top: 140px;
+    margin-top: 90px;
     width: 150px;
     height: 38px;
     font-weight: bold;
-    margin-left: 125px;
+    margin-left: 50px;
     font-size: 13px;
     line-height: 15px;
     align-items: center;
@@ -20,20 +20,21 @@
 }
 
 .img {
-    width: 400px;
+    width: 250px;
 }
 
 .gen {
     grid-area: w;
     border-radius: 18px;
     margin-top: 111px;
-    margin-left: 50px;
-    justify-self: center;
+
+    justify-self: end;
+    margin-right: 41px;
 }
 
 .mySwiper {
-    width: 400px;
-    height: 550px;
+    width: 250px;
+    height: 370px;
     border-radius: 18px;
 }
 
@@ -47,18 +48,19 @@
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     background-color: #FCFCFC;
+
 }
 
 @media (max-width: 1440px) {
     .mySwiper {
         width: 270px;
         height: 400px;
-        justify-content: center;
+        justify-content: end;
 
     }
 
     .gen {
-        justify-self: center;
+        justify-self: end;
         margin-left: 128px;
     }
 

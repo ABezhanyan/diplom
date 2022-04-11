@@ -1,15 +1,16 @@
 .nav {
     grid-area: n;
     display: flex;
-    justify-content: end;
+    justify-content: center;
+
 
 }
 
 
 .NavBar {
     margin-right: 22px;
-    margin-top: 16px;
-    font-size: 26px;
+    margin-top: 8px;
+    font-size: 16px;
     line-height: 14px;
     font-weight: bold;
     color: black;
@@ -31,18 +32,17 @@
 
 .btn:hover,
 .btn:active {
-    letter-spacing: 5px;
+    color: #0828B6;
 
 }
 
 .btn:after,
 .btn:before {
     backface-visibility: hidden;
-    border: 1px solid white;
     bottom: auto;
     content: " ";
     display: block;
-    margin-top: 8px;
+    margin-top: 16px;
     margin-bottom: 8px;
     transition: all 280ms ease-in-out;
     width: 0;
@@ -51,7 +51,7 @@
 .btn:hover:after,
 .btn:hover:before {
     backface-visibility: hidden;
-    border-color: #0828B6;
+
     transition: width 350ms ease-in-out;
     width: 95%;
 
@@ -65,12 +65,6 @@
 }
 
 @media (max-width: 1440px) {
-    .NavBar {
-        margin-right: 20px;
-        margin-top: 10px;
-        font-size: 15px;
-        line-height: 14px;
-        font-weight: bold;
-    }
+
 
 }

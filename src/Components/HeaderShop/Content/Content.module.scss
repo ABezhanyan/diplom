@@ -1,0 +1,182 @@
+$bg-color: #F1E9DA;
+$link-text-color: #fff;
+$button-bg-1: #541388;
+$button-bg-2: #D90368;
+$button-bg-3: #104547;
+$button-bg-4: #4F000B;
+$button-bg-5: #F28123;
+$border-radius: 6px;
+$overlay-color: #fff;
+
+/* common styles !!!YOU DON'T NEED THEM */
+body {
+  background-color: $bg-color;
+
+  .container {
+
+
+    h1 {
+      font: {
+        family: 'Droid Serif', serif;
+        weight: 400;
+        style: normal;
+        size: 30px;
+      }
+      margin-bottom: 30px;
+
+      span {
+        font: {
+          weight: 700;
+          style: italic;
+        }
+        color: #D90368;
+        border-bottom: 2px dashed currentColor;
+      }
+    }
+
+    .button_effect {
+      padding: 30px 0px;
+
+      h2 {
+        font: {
+          family: 'Droid Serif', serif;
+          size: 20px;
+        }
+        margin-bottom: 40px;
+      }
+
+      a {
+        margin-right: 17px;
+
+
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}
+
+/* button styles !!!YOU NEED THEM
+!!!ALSO YOU NEED TO ADD FONTWESOME */
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: $link-text-color;
+  text-transform: capitalize;
+  /* background-color: - add your own background-color */
+  font: {
+    family: 'Roboto', sans-serif; /* put your font-family */
+    size: 16px;
+  }
+  padding: 15px 0px;
+  width: 200px;
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+
+
+/* effect-5 styles */
+
+.effect.effect_5 {
+  transition: all 0.2s linear 0s;
+  background-color: #104547;
+
+  &:before {
+    content: url(../../../../src/Components/Catalog/Img/strelka.svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    //left: 0px;
+    height: 100%;
+    width: 30px;
+    background-color: rgba($overlay-color,0.3);
+    border-radius: 0 50% 50% 0;
+    transform: scale(0,1);
+    transform-origin: left center;
+    transition: all 0.2s linear 0s;
+  }
+
+  &:hover {
+    text-indent: 30px;
+
+    &:before {
+      transform: scale(1,1);
+      text-indent: 0;
+
+    }
+  }
+}
+
+.content{
+    grid-area: nb;
+    margin-top: 150px;
+
+}
+
+.text {
+    width: 500px;
+    display: flex;
+    padding-bottom: 12px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 52px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #131313;
+    text-align: start;
+
+
+}
+
+.text_two {
+    width: 390px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #555555;
+    padding-bottom: 12px;
+}
+
+.button {
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 173px;
+    height: 41px;
+    background: #004A30;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1440px) {
+    .content  {
+        margin-top: 180px;
+        margin-left: 250px;
+
+    }
+
+    .text {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 52px;
+    }
+
+    .text_two {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+}

@@ -7,8 +7,10 @@ const CatalogFour = () => {
             <img src={FourCard} className={classes.img} alt=""/>
             <div className={classes.text}>Pomegranate</div>
             <div className={classes.text_two}>$8.50</div>
-            <div className={classes.text_three}>
-                <button className={classes.btn}>ADD TO CART</button>
+            <div className="container">
+                <div className="button-effect">
+                    <a href="#" className="effect effect-5" title="ADD TO CART">ADD TO CART</a>
+                </div>
             </div>
         </div>
     )

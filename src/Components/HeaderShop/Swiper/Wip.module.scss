@@ -1,0 +1,217 @@
+$bg-color: #F1E9DA;
+$link-text-color: #fff;
+$button-bg-1: #541388;
+$button-bg-2: #D90368;
+$button-bg-3: #104547;
+$button-bg-4: #4F000B;
+$button-bg-5: #F28123;
+$border-radius: 6px;
+$overlay-color: #fff;
+
+/* common styles !!!YOU DON'T NEED THEM */
+body {
+    background-color: $bg-color;
+
+    .container {
+        text-align: center;
+        h1 {
+            font: {
+                family: 'Droid Serif', serif;
+                weight: 400;
+                style: normal;
+                size: 30px;
+            }
+            margin-bottom: 30px;
+
+            span {
+                font: {
+                    weight: 700;
+                    style: italic;
+                }
+                color: #D90368;
+                border-bottom: 2px dashed currentColor;
+            }
+        }
+
+        .button_effect {
+            padding: 30px 0px;
+
+            h2 {
+                font: {
+                    family: 'Droid Serif', serif;
+                    size: 20px;
+                }
+                margin-bottom: 40px;
+            }
+
+            a {
+                margin-right: 17px;
+
+
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
+/* button styles !!!YOU NEED THEM
+!!!ALSO YOU NEED TO ADD FONTWESOME */
+
+.effect {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: $link-text-color;
+    text-transform: capitalize;
+    /* background-color: - add your own background-color */
+    font: {
+        family: 'Roboto', sans-serif; /* put your font-family */
+        size: 16px;
+    }
+    padding: 15px 0px;
+    width: 200px;
+    border-radius: $border-radius;
+    overflow: hidden;
+}
+
+
+
+/* effect-5 styles */
+
+.effect.effect_5 {
+    transition: all 0.2s linear 0s;
+    background-color: #104547;
+
+    &:before {
+        content: url(../../../../src/Components/Catalog/Img/strelka.svg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        //left: 0px;
+        height: 100%;
+        width: 30px;
+        background-color: rgba($overlay-color,0.3);
+        border-radius: 0 50% 50% 0;
+        transform: scale(0,1);
+        transform-origin: left center;
+        transition: all 0.2s linear 0s;
+    }
+
+    &:hover {
+        text-indent: 30px;
+
+        &:before {
+            transform: scale(1,1);
+            text-indent: 0;
+
+        }
+    }
+}
+
+.text {
+    padding-top: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 23px;
+    color: #131313;
+}
+
+.text_two {
+    padding-top: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+.Sl {
+    width: 100%;
+    margin-bottom: auto;
+
+}
+
+.button_slide1 {
+    display: flex;
+    cursor: pointer;
+    margin-top: 140px;
+    width: 150px;
+    height: 38px;
+    font-weight: bold;
+    margin-left: 125px;
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.img {
+    width: 313px;
+}
+
+.gen {
+    grid-area: w;
+    border-radius: 18px;
+    margin-top: 111px;
+    margin-left: 50px;
+    justify-self: end;
+}
+
+.mySwiper {
+    width: 313px;
+    height: 460px;
+    border-radius: 18px;
+}
+
+.sv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #FCFCFC;
+}
+
+/*@media (max-width: 1440px) {*/
+/*    .mySwiper {*/
+/*        width: 270px;*/
+/*        height: 400px;*/
+/*        justify-content: center;*/
+
+/*    }*/
+
+/*    .gen {*/
+/*        justify-self: center;*/
+/*        margin-left: 128px;*/
+/*    }*/
+
+/*    .sv {*/
+/*        background-size: 250px;*/
+/*    }*/
+
+/*    .img {*/
+/*        width: 270px;*/
+/*    }*/
+
+/*    .button_slide1 {*/
+/*        margin-top: 100px;*/
+/*        margin-left: 60px;*/
+/*    }*/
+
+/*}*/
