@@ -1,12 +1,9 @@
-import classes from "./HeaderShop.module.css";
-import "./HeaderShop.css"
-import NavBar from "./NavBar/NavBar";
-import Logo from "./Logo/Logo";
-import Hero from "./Header/Hero";
-import Wip from "./Swiper/Wip";
-import Content from "./Content/Content";
+import classes from "./HeaderM.module.scss";
+import "./HeaderM.css"
+import Logo from "./Logo/Logo"
+import NavBar from "./NavBar/NavBar"
 import $ from "jquery";
-import {NavLink} from "react-router-dom";
+
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > 1){
@@ -22,7 +19,7 @@ $(window).scroll(function() {
 });
 
 
-const HeaderShop = () => {
+const HeaderM = () => {
     return (
         <>
             <header>
@@ -31,15 +28,9 @@ const HeaderShop = () => {
                     <NavBar />
                 </div>
             </header>
-            <content>
-                <div className={classes.ShopFood}>
-                    <Content />
-                    <Wip />
-                </div>
-            </content>
         </>
     )
 
 }
 
-export default HeaderShop;
+export default HeaderM;
