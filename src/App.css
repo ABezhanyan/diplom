@@ -2,43 +2,10 @@
     background: WhiteSmoke;
 }
 
-/*.ShopFood {*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr 0.45fr 1fr 1fr;*/
-/*    grid-template-rows: 0.1fr 1fr;*/
-/*    gap: 0 0;*/
-/*    grid-template-areas:*/
-/*    "n n c h"*/
-/*    "w w nb h";*/
-/*}*/
 
 
 
-.Catalog {
-    display: grid;
-    grid-template-columns: 1fr 0.5fr 1fr;
-    grid-template-rows: 0.1fr 1fr;
-    gap: 30px 20px;
-    grid-template-areas:
-    "A A A"
-    "FrutOne FrutTwo FrutThree"
-    "FrutFour FrutFive FrutSix"
-    "FrutSeven FrutEight FrutNine"
-    "btn btn btn";
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
-.Fresh {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0 0;
-    grid-template-areas:
-    "FreshImg FreshText";
-    margin-top: 80px;
-}
 
 .Subscribe {
     display: grid;
@@ -51,13 +18,17 @@
 }
 
 .ContactUS {
-
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15)), url(/src/Components/ContactUs/Img/contact.jpg) no-repeat ;
+    background-size: auto;
 }
 
 
 .ContactUS_one {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    justify-content: center;
+    grid-template-columns: 490px 490px;
     grid-template-rows: 0.1fr 1fr;
     gap: 0 0;
     grid-template-areas:
@@ -65,9 +36,10 @@
     "ContactIn ContactForm";
     margin-top: 50px;
     height: 607px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.15)), url(/src/Components/ContactUs/Img/contact.jpg) no-repeat ;
-    background-size: auto;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+
 }
 
 .ContactUS_one path {
@@ -84,7 +56,7 @@
 
 .ContactUS_coll {
     display: grid;
-    grid-template-columns: 1fr 0.9fr 0.9fr 0.2fr;
+    grid-template-columns: 307px 306px 306px 62px;
     grid-template-rows: 1fr;
     gap: 0 0;
     grid-template-areas:
@@ -93,6 +65,9 @@
     border-bottom: solid;
     border-color: #666666;
     border-bottom-width: 1px;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
@@ -118,8 +93,3 @@ ul {
 }
 
 
-@media (max-width: 1440px) {
-    .ContactUS {
-        background-size: 1440px;
-    }
-}

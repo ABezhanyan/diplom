@@ -1,7 +1,14 @@
 .HeaderMain {
     grid-area: ContactMainMenu;
-    width: 370px;
+    width: 245px;
     margin-top: 50px;
+    text-align: center;
+}
+
+.nav_main {
+    width: 245px;
+    display: flex;
+    justify-content: center;
 }
 
 .nav {

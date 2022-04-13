@@ -1,0 +1,25 @@
+.FooterShop_main {
+  display: flex;
+  display: grid;
+  justify-content: center;
+  height: 88px;
+  background: #131313;
+}
+
+.FooterShop {
+  display: flex;
+  display: grid;
+  grid-template-columns: 325px 427px 228px;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas:
+    "LogoShop NavShop UpShop";
+  justify-content: center;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+

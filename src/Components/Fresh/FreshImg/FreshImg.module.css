@@ -1,22 +1,12 @@
 .fresh {
     grid-area: FreshImg;
+    margin-right: 40px;
 }
 
 .freshImg {
-    height: 800px;
-}
-
-@media (max-width: 1440px) {
-    .freshImg {
-        height: 630px;
-    }
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
 
 }
 
-
-@media (max-width: 1360px) {
-    .freshImg {
-        height: 550px;
-    }
-
-}

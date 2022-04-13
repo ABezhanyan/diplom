@@ -9,6 +9,7 @@ import Subscribe from "./Components/Subscribe/Subscribe";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import HeaderM from "./Components/Header/HeaderM";
 import Footer from "./Components/Footer/Footer";
+import FooterShop from "./Components/FooterShop/FooterShop";
 
 
 const App = () => {
@@ -47,6 +48,7 @@ const App = () => {
                </Routes>
                <Routes>
                    <Route path="/" element={<ContactUs />}></Route>
+                   <Route path="/shop" element={<FooterShop />}></Route>
                </Routes>
        </div>
    </BrowserRouter>

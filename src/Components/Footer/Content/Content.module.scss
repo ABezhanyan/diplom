@@ -117,20 +117,21 @@ body {
 
 .content{
     grid-area: nb;
-    margin-top: 150px;
+    margin-top: 210px;
 
 }
 
 .text {
-    width: 500px;
+    width: 600px;
     display: flex;
     padding-bottom: 12px;
     font-style: normal;
     font-weight: 300;
-    font-size: 32px;
+    font-size: 48px;
     line-height: 52px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+
     color: #131313;
     text-align: start;
 
@@ -138,10 +139,10 @@ body {
 }
 
 .text_two {
-    width: 390px;
+    width: 500px;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.02em;
     color: #555555;
@@ -161,22 +162,3 @@ body {
     color: #FFFFFF;
 }
 
-@media (max-width: 1440px) {
-    .content  {
-        margin-top: 180px;
-        margin-left: 250px;
-
-    }
-
-    .text {
-        font-weight: 300;
-        font-size: 32px;
-        line-height: 52px;
-    }
-
-    .text_two {
-        font-size: 12px;
-        line-height: 20px;
-    }
-
-}

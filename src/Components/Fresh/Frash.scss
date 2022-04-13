@@ -1,0 +1,17 @@
+.Fresh {
+  display: flex;
+  display: grid;
+  grid-template-columns: 490px 490px;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas:
+    "FreshImg FreshText";
+  margin-top: 80px;
+  justify-content: center;
+  max-width: 1420px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+

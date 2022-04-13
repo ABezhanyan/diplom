@@ -42,7 +42,7 @@ class ContactForm extends React.Component {
                 <div className={classes.form_header}>
                     Get in touch with us
                 </div>
-                <div>
+                <div className={classes.contact_form_main}>
                     <form className={classes.contact_form} onSubmit={this.handleSubmit}>
                         <div>
                             <input className={classes.form_text} type="text"  placeholder="Your name" value={this.state.valueOne} onChange={this.handleChangeOne} />

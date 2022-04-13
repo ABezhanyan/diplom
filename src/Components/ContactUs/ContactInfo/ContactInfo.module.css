@@ -1,8 +1,9 @@
 .ContactInfo {
     grid-area: ContactIn;
-    width: 400px;
-    padding-top: 60px;
-    padding-left: 220px;
+    width: 350px;
+    padding-top: 75px;
+
+
 }
 
 .text {

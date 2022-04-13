@@ -2,6 +2,7 @@
     grid-area: FreshText;
     margin-top: auto;
     margin-bottom: auto;
+
 }
 
 .text {
@@ -13,11 +14,12 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: #131313;
+    width: 100%;
 }
 
 .text_two {
     margin-bottom: 25px;
-    width: 511px;
+    width: 100%;
     height: 79px;
     font-style: normal;
     font-weight: normal;
@@ -40,10 +42,3 @@
     color: #FFFFFF;
 }
 
-@media (max-width: 1440px) {
-    .freshText {
-
-
-    }
-
-}

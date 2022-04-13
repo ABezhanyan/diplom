@@ -1,5 +1,5 @@
 import classes from "./FreshImg.module.css";
-import Fresh from "../Img/Fresh.svg"
+import Fresh from "../Img/Fresh.png"
 
 const FreshImg = () => {
     return (
