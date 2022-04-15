@@ -12,6 +12,7 @@ import Footer from "./Components/CommonComponents/Footer/Footer";
 import FooterShop from "./Components/ShopPage/FooterShop/FooterShop";
 import About from "./Components/AboutPage/About/About";
 import AboutContent from "./Components/AboutPage/AboutContent/AboutContent";
+import AboutSubscribe from './Components/AboutPage/AboutSubscribe/AboutSubscribe';
 
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
                </Routes>
                <Routes>
                    <Route path="/" element={<Subscribe />}></Route>
+                   <Route path="/about" element={<AboutSubscribe />}></Route>
                </Routes>
                <Routes>
                    <Route path="/" element={<ContactUs />}></Route>

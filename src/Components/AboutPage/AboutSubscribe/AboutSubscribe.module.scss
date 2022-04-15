@@ -1,0 +1,12 @@
+.Subscribe {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    gap: 0 0;
+    grid-template-areas:
+    "SubText"
+    "SubForm";
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: url(./img/subscribe.png);
+}

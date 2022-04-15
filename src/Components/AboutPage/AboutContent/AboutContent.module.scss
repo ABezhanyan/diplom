@@ -1,0 +1,56 @@
+.about_main {
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    max-width: 980px;
+
+}
+
+.about_img {
+    width: 100%;
+}
+
+.text {
+    max-width: 580px;
+    align-items: center;
+}
+
+.text_main {
+    display: flex;
+    justify-content: center;
+}
+
+.about_text {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+margin-bottom: 25px;
+letter-spacing: 0.02em;
+}
+
+.about_text_img {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 35px;
+    letter-spacing: 0.02em;
+
+}
+
+.text_header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 0.15em;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}

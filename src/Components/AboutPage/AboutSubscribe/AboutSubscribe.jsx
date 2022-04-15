@@ -1,16 +1,16 @@
-import '../Subscribe/Subscripe.scss';
+import classes from'./AboutSubscribe.module.scss';
 import SubText from "./SubscribeText/SubText";
 import SubForm from "./SubscribeForm/SubForm";
 
 
 
-const Subscribe = () => {
+const AboutSubscribe = () => {
     return (
-        <div className="Subscribe">
+        <div className={classes.Subscribe}>
             <SubText />
             <SubForm />
         </div>
     )
 }
 
-export default Subscribe;
+export default AboutSubscribe;
