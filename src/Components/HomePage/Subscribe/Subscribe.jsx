@@ -1,4 +1,4 @@
-import '../../App.css';
+import '../../../App.css';
 import SubText from "./SubscribeText/SubText";
 import SubForm from "./SubscribeForm/SubForm";
 

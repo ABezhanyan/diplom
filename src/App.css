@@ -2,11 +2,6 @@
     background: WhiteSmoke;
 }
 
-
-
-
-
-
 .Subscribe {
     display: grid;
     grid-template-columns: 1fr;
@@ -19,7 +14,7 @@
 
 .ContactUS {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.15)), url(/src/Components/ContactUs/Img/contact.jpg) no-repeat ;
+    rgba(0, 0, 0, 0.15)), url(/src/Components/HomePage/ContactUs/Img/contact.jpg) no-repeat ;
     background-size: auto;
 }
 

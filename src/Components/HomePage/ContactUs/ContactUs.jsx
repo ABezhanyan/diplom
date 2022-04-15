@@ -1,4 +1,4 @@
-import '../../App.css';
+import '../../../App.css';
 import {Route, Routes} from "react-router";
 import ContactHeader from "./ContactHeader/ContactHeader";
 import ContactInfo from "./ContactInfo/ContactInfo";

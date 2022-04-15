@@ -1,4 +1,4 @@
-import '../../App.css';
+import '../../../App.css';
 import AHeader from "./AHeaderMain/AHeader";
 import CardOne from "./CardOne/CardOne";
 import CardTwo from "./CardTwo/CardTwo";

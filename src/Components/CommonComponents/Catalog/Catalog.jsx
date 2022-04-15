@@ -1,4 +1,4 @@
-import "../../App.css"
+import "../../../App.css"
 import CHeader from "./CHeader/CHeader";
 import CatalogOne from "./CatalogOne/CatalogOne";
 import CatalogTwo from "./CatalogTwo/CatalogTwo";

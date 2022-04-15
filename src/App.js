@@ -1,15 +1,17 @@
 import './App.css';
 import {Route, Routes} from "react-router";
 import {BrowserRouter} from "react-router-dom"
-import Advantages from "./Components/Advantages/Advantages";
-import Catalog from "./Components/Catalog/Catalog";
-import Fresh from "./Components/Fresh/Fresh";
-import Reviews from "./Components/Reviews/Reviews";
-import Subscribe from "./Components/Subscribe/Subscribe";
-import ContactUs from "./Components/ContactUs/ContactUs";
-import HeaderM from "./Components/Header/HeaderM";
-import Footer from "./Components/Footer/Footer";
-import FooterShop from "./Components/FooterShop/FooterShop";
+import Advantages from "./Components/HomePage/Advantages/Advantages";
+import Catalog from "./Components/CommonComponents/Catalog/Catalog";
+import Fresh from "./Components/HomePage/Fresh/Fresh";
+import Reviews from "./Components/HomePage/Reviews/Reviews";
+import Subscribe from "./Components/HomePage/Subscribe/Subscribe";
+import ContactUs from "./Components/HomePage/ContactUs/ContactUs";
+import HeaderM from "./Components/CommonComponents/Header/HeaderM";
+import Footer from "./Components/CommonComponents/Footer/Footer";
+import FooterShop from "./Components/ShopPage/FooterShop/FooterShop";
+import About from "./Components/AboutPage/About/About";
+import AboutContent from "./Components/AboutPage/AboutContent/AboutContent";
 
 
 const App = () => {
@@ -28,10 +30,11 @@ const App = () => {
                <Routes>
                    <Route path="/" element={<Footer />}></Route>
                    <Route path="/shop" element={<Footer />}></Route>
-                   <Route path="/about" element={<Footer />}></Route>
+                   <Route path="/about" element={<About />}></Route>
                </Routes>
                <Routes>
                    <Route path="/" element={<Advantages />}></Route>
+                   <Route path="/about" element={<AboutContent />}></Route>
                </Routes>
                <Routes>
                    <Route path="/" element={<Catalog />}></Route>
@@ -49,6 +52,7 @@ const App = () => {
                <Routes>
                    <Route path="/" element={<ContactUs />}></Route>
                    <Route path="/shop" element={<FooterShop />}></Route>
+                   <Route path="/about" element={<FooterShop />}></Route>
                </Routes>
        </div>
    </BrowserRouter>

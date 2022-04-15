@@ -1,8 +1,8 @@
 import classes from "./ContactOrganicText_Social.module.css";
 import Instagram from "../Img/Instagram.svg"
-import Facebook from  "../Img/Facebook.svg"
-import Twitter from  "../Img/Twitter.svg"
-import Linkedin from  "../Img/Linkedin.svg"
+import Facebook from "../Img/Facebook.svg"
+import Twitter from "../Img/Twitter.svg"
+import Linkedin from "../Img/Linkedin.svg"
 
 const ContactOrganicText_Social = () => {
     return (
