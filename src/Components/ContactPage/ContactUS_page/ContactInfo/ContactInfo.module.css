@@ -1,0 +1,49 @@
+.ContactInfo {
+    grid-area: ContactIn;
+    width: 350px;
+    padding-top: 75px;
+
+
+}
+
+.text {
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #131313;
+}
+
+.text:nth-child(7n) {
+    padding-top: 30px;
+}
+
+.address {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #131313;
+}
+
+.phone {
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #131313;
+}
+
+.e_mail {
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #131313;
+}

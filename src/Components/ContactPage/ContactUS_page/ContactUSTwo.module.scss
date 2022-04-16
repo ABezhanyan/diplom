@@ -1,0 +1,21 @@
+.ContactUS {
+   
+}
+
+
+.ContactUS_one {
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    grid-template-columns: 490px 490px;
+    grid-template-rows: 0.1fr 1fr;
+    gap: 0 0;
+    grid-template-areas:
+    "ContactIn ContactForm";
+    margin-top: 50px;
+    height: 607px;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
