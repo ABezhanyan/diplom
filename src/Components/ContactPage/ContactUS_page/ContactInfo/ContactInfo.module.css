@@ -1,12 +1,18 @@
 .ContactInfo {
     grid-area: ContactIn;
-    width: 100%;
+    max-width: 400px;
     padding-top: 75px;
 
 
 }
 
+.ContactInfo_main {
+    display: flex;
+    justify-content: center;
+}
+
 .text {
+    width: 100%;
     padding-top: 10px;
     font-style: normal;
     font-weight: normal;
@@ -20,6 +26,7 @@
 }
 
 .address {
+    width: 100%;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -29,6 +36,7 @@
 }
 
 .phone {
+    width: 100%;
     padding-top: 10px;
     font-style: normal;
     font-weight: bold;
@@ -39,6 +47,7 @@
 }
 
 .e_mail {
+    width: 100%;
     padding-top: 10px;
     font-style: normal;
     font-weight: bold;
@@ -47,3 +56,9 @@
     text-transform: uppercase;
     color: #131313;
 }
+
+
+@media (max-width: 600px) {
+    
+    
+  }

@@ -2,7 +2,8 @@ import classes from "./ContactInfo.module.css";
 
 const ContactInfo = () => {
     return (
-        <div className={classes.ContactInfo}>
+        <div className={classes.ContactInfo_main}>
+            <div className={classes.ContactInfo}>
             <div className={classes.address}>
                 Address
             </div>
@@ -26,6 +27,7 @@ const ContactInfo = () => {
             <div className={classes.text}>
                 Lectus a odio tristique viverra justo. Magna diam dignissim lectus cursus volutpat purus, erat cras. Turpis ridiculus quis lobortis ut enim ut elementum. Feugiat sit nunc, morbi lorem faucibus.
             </div>
+        </div>
         </div>
     )
 

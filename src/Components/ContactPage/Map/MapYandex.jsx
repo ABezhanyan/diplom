@@ -16,6 +16,7 @@ const MapYandex = () => (
                 <GeolocationControl options={{ float: 'right' }} />
                 <RulerControl options={{ float: 'left' }} />
                 <RoutePanel options={{float: "left"}} />
+                
 
             </Map>
         </div>

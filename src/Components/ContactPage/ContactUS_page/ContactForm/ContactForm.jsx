@@ -38,25 +38,24 @@ class ContactForm extends React.Component {
 
     render() {
         return (
-            <div className="container">
-                <div className={classes.form_header}>
-                    Get in touch with us
-                </div>
+            <div className={classes.container}>
                 <div className={classes.contact_form_main}>
                     <form className={classes.contact_form} onSubmit={this.handleSubmit}>
-                        <div>
+                        <div className={classes.form_div}>
                             <input className={classes.form_text} type="text"  placeholder="Your name" value={this.state.valueOne} onChange={this.handleChangeOne} />
                         </div>
-                        <div>
+                        <div className={classes.form_div}>
                             <input className={classes.form_text}  type="text" placeholder="Your phone" value={this.state.valueTwo} onChange={this.handleChangeTwo} />
                         </div>
-                        <div>
+                        <div className={classes.form_div}>
                             <input className={classes.form_text}  type="text" placeholder="Your email" value={this.state.valueThree} onChange={this.handleChangeThree} />
                         </div>
-                        <div>
+                        <div className={classes.form_div}>
                             <input className={classes.form_text_last}  type="text" placeholder="Your massage" value={this.state.valueFour} onChange={this.handleChangeFour} />
                         </div>
-                        <input className={classes.form_btn} type="submit" value="Send massege" />
+                        <div className={classes.form_div}>
+                            <input className={classes.form_btn} type="submit" value="Send massege" />
+                        </div>
                     </form>
                 </div>
             </div>

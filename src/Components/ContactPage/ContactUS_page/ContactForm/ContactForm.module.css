@@ -6,6 +6,8 @@
     
 }
 
+
+
 .form_header {
     width: 488px;
     padding-top: 60px;
@@ -87,5 +89,27 @@
     .form_btn {
         width: 350px;
     }
+
+    .form_div {
+        width: 100%;
+    } 
+
+    .contact_form_main {
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+    }
+
+    .container_mian {
+        display: flex;
+        justify-content: center;
+        
+    }
     
+    .container {
+        display: flex;
+        justify-content: center;
+        
+        
+    }
   }
