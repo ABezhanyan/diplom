@@ -1,4 +1,4 @@
-import { YMaps, Map, GeolocationControl, FullscreenControl } from 'react-yandex-maps';
+import { YMaps, Map, GeolocationControl, RulerControl, RoutePanel} from 'react-yandex-maps';
 import './Map.scss'
 
 const MapYandex = () => (
@@ -14,7 +14,9 @@ const MapYandex = () => (
                 
             >
                 <GeolocationControl options={{ float: 'right' }} />
-                <FullscreenControl options={{ float: 'left' }} />
+                <RulerControl options={{ float: 'left' }} />
+                <RoutePanel options={{float: "left"}} />
+
             </Map>
         </div>
     </YMaps>
