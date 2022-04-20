@@ -3,59 +3,93 @@ import "./NavBarOne.scss";
 import "./NavBar.css"
 import Login from "../../Login/Login";
 import login from '../img/login.svg'
+import { useState } from "react";
+import burger from "../img/burger.svg"
 import $ from "jquery";
 
 
-$(document).ready(function() {
-	$('button.myLinkModal').click( function(event){
-		event.preventDefault();
-		$('#myOverlay').fadeIn(297,	function(){
-      $('#myModal') 
-      .css('display', 'block')
-      .animate({opacity: 1}, "linear");
-      
-		});
-	});
-
-	$('#myModal__close, #myOverlay').click( function(){
-		$('#myModal').animate({opacity: 0}, 198,
-      function(){
-        $(this).css('display', 'none');
-        $('#myOverlay').fadeOut(297);
-		});
-	});
-});
+const NavBar = (props) => {
 
 
+        $(document).ready(function($) {
+                $('.popup-open').click(function() {
+                        $('.popup-fade').fadeIn();
+                        return false;
+                });	
+                
+                $('.popup-close').click(function() {
+                        $(this).parents('.popup-fade').fadeOut();
+                        return false;
+                });		
+        
+                $(document).keydown(function(e) {
+                        if (e.keyCode === 27) {
+                                e.stopPropagation();
+                                $('.popup-fade').fadeOut();
+                        }
+                });
+                
+                $('.popup-fade').click(function(e) {
+                        if ($(e.target).closest('.popup').length === 0) {
+                                $(this).fadeOut();					
+                        }
+                });	
+        });
+
+        const [switchTOggled, setSwitchTOggled] = useState(false);
+
+        const ToggleSwitch = () => {
+                switchTOggled ? setSwitchTOggled(false) : setSwitchTOggled(true);
+        };
 
 
-const NavBar = () => {
+       
+
     return (
-        <div className="nav">
-                <NavLink href="#" to="/" className="NavBar btn">
-                        HOME
-                </NavLink>
-                <NavLink href="#" to="/shop" className="NavBar btn">
-                        SHOP
-                </NavLink>
-                <NavLink href="#" to="/about" className="NavBar btn">
-                        ABOUT
-                </NavLink>
-                <NavLink href="#" to="/contact" className="NavBar btn">
-                        CONTACT
-                </NavLink>
-                <div>
-                <button class="myLinkModal" href="#"><img className="myLinkModal_img" alt="login" src={login}/></button>
-                <div id="myModal">
-                                <Login />
-                        <div id="myModal__close" class="close"></div>
+        <div>
+               
+                <div onClick={ToggleSwitch} className="burger_login_main" >
+                        <img className="burger_login" alt="" src={burger}/>
                 </div>
-                <div id="myOverlay"></div>
-            
-      </div>
+                
+                
+                <ul className={switchTOggled ? "menu active" : "menu"} id="menu_login" >
+                <li className="menu-li">
+                <NavLink onClick={ToggleSwitch} href="#" to="/" className="NavBar btn">HOME</NavLink>
+                </li>
+                <li className="menu-li">
+                <NavLink onClick={ToggleSwitch} href="#" to="/shop" className="NavBar btn">SHOP</NavLink>
+                </li>
+                <li className="menu-li">
+                <NavLink onClick={ToggleSwitch} href="#" to="/about" className="NavBar btn">ABOUT</NavLink>
+                </li>
+                <li className="menu-li">
+                <NavLink onClick={ToggleSwitch} href="#" to="/contact" className="NavBar btn">CONTACT</NavLink>
+                </li>
+                <li className="menu-li">
+                <button className="popup-open" href="#"><img className="myLinkModal_img" alt="login" src={login}/>
+                </button>
+                </li>
+                </ul> 
+        
+      
+
+
+                <div className="popup-fade">
+                        <div className="popup">
+                                        <Login />
+                        </div>
+                
+                </div>
+              
+                
         </div>
+           
+        
     )
 
 }
+
+// {/*  */}
 
 export default NavBar;

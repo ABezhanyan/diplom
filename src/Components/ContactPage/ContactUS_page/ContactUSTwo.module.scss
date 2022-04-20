@@ -1,10 +1,13 @@
-
+.ContactUS {
+    
+    
+}
 
 
 .ContactUS_one {
-    display: grid;
-    justify-self: center;
-    justify-content: center;
+    display: flex;
+    
+    justify-content: space-between;
     grid-template-columns: 490px 490px;
     grid-template-rows: 0.1fr 1fr;
     gap: 0 0;
@@ -12,8 +15,26 @@
     "ContactIn ContactForm";
     margin-top: 50px;
     height: 607px;
-    max-width: 1440px;
+    max-width: 980px;
     margin-right: auto;
     margin-left: auto;
 
 }
+
+
+@media (max-width: 1024px) {
+    .ContactUS {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 340px;
+        margin-left: auto;
+    }
+    
+    .ContactUS_one {
+      display: inline-block;
+      justify-content: center;
+    
+   }
+  }
+
+

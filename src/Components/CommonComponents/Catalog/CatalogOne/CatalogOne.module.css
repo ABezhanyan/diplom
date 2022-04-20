@@ -1,4 +1,4 @@
-.Card {
+.catalog__col {
     grid-area: FrutOne;
     /*width: 474px;*/
     /*height: 550px;*/
@@ -7,7 +7,7 @@
     background: #FCFCFC;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     border-radius: 18px;
-    justify-self: end;
+    
     transition: all 0.6s ease-in-out;
 }
 
@@ -17,7 +17,7 @@
 
 .img {
     border-radius: 18px;
-    width: 313px;
+    width: 100%;
     height: 259px;
 }
 
@@ -62,16 +62,171 @@
     color: #FFFFFF;
 }
 
-/*@media (max-width: 1440px) {*/
-/*    .Card {*/
-/*        width: 313px;*/
-/*        height: 460px;*/
-/*    }*/
 
-/*    .img {*/
-/*        border-radius: 18px;*/
-/*        width: 313px;*/
-/*        height: 259px;*/
-/*    }*/
+.section {
+  margin: 60px 0 /* внешние отступы для блока - сверху и снизу по 60px, слева и справа по 0px */;
+}
+.container {
+  max-width: 1040px /* максимальная ширина контейнера */;
+  margin: 0 auto /* расположение контейнера по центру */;
+  padding: 0 30px /* внутренние отступы слева и справа по 30px, верхний и нижний отступы по 0px */;
+}
+.catalog__flex {
+  display: flex /* по умолчанию дочерние блоки(.catalog__col) будут располагаться в ряд */;
+  flex-wrap: wrap /* дочерние блоки переносятся на следующую строку, если ширина всех внутренних блоков превышает ширину родительского блока(.catalog__flex) */;
+  margin: 0 -16px   /* Отрицательные внешние отступы(значения противоположные значениям padding блока .catalog__col), чтобы компенсировать внутренние отступы дочерних блоков(.catalog__col), НЕ ДОЛЖЕН превышать боковых значений padding блока .container*/;
+}
+.catalog__col {
+    
+  width: 30.33333333% /* Задаем ширину блока(по 4 блока в ряд)*/;
+  padding: 0 0 30px /* Размер внутренних отступов блока - справа и слева по 15px(которые дают общий отступ 30px между блоками) и снизу отступ 30px */;
+}
 
-/*}*/
+.catalog__col:nth-child(1) {
+    margin: 0 18px 30px;
+}
+
+.catalog__col:nth-child(2) {
+    margin: 0 11px;
+}
+
+.catalog__col:nth-child(3) {
+    margin: 0 14px;
+}
+
+.catalog__col:nth-child(4) {
+    margin: 0 18px;
+}
+
+.catalog__col:nth-child(5) {
+    margin: 0 11px;
+}
+
+.catalog__col:nth-child(6) {
+    margin: 0 14px;
+}
+
+/* Адаптивность */
+
+@media (max-width: 1024px) {
+  .catalog__col {
+    width: 46.8% /* при ширине браузера меньше 992px будет по 2 блока в ряд */;
+  }
+
+  .img {
+      
+      height: 330px;
+  }
+
+  .catalog__col {
+      height: 600px;
+  }
+
+  .text {
+    padding-top: 50px;
+}
+
+.text_two {
+    padding-top: 30px;
+}
+
+.text_three {
+    padding-top: 40px;
+}
+
+.catalog__col:nth-child(1) {
+    margin: 0 18px 30px;
+}
+
+.catalog__col:nth-child(2) {
+    margin: 0 11px;
+}
+
+.catalog__col:nth-child(3) {
+    margin: 0 18px 30px;
+}
+
+.catalog__col:nth-child(4) {
+    margin: 0 11px;
+}
+
+.catalog__col:nth-child(5) {
+    margin: 0 18px;
+}
+
+.catalog__col:nth-child(6) {
+    margin: 0 11px;
+}
+
+
+}
+
+@media (max-width: 882px) {
+    .catalog__col {
+      width: 46% /* при ширине браузера меньше 576px будет по 1 блоку */;
+      height: 550px;
+    }
+  
+    .img {
+      height: 300px;
+      }
+  }
+
+
+
+
+@media (max-width: 768px) {
+  .catalog__col {
+    width: 46% /* при ширине браузера меньше 576px будет по 1 блоку */;
+    height: 500px;
+  }
+
+  .img {
+    height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .catalog__col {
+      width: 44.9% /* при ширине браузера меньше 576px будет по 1 блоку */;
+    }
+  
+    .img {
+      height: 250px;
+      }
+  }
+
+@media (max-width: 480px) {
+    .catalog__col {
+      width: 92% /* при ширине браузера меньше 576px будет по 1 блоку */;
+      margin: 0 auto 30px auto ;
+    }
+  
+    .img {
+      height: 250px;
+      }
+
+      .catalog__col:nth-child(1) {
+        margin: 0 auto 30px auto ;
+    }
+    
+    .catalog__col:nth-child(2) {
+        margin: 0 auto 30px auto ;
+    }
+    
+    .catalog__col:nth-child(3) {
+        margin: 0 auto 30px auto ;
+    }
+    
+    .catalog__col:nth-child(4) {
+        margin: 0 auto 30px auto ;
+    }
+    
+    .catalog__col:nth-child(5) {
+        margin: 0 auto 30px auto ;
+    }
+    
+    .catalog__col:nth-child(6) {
+        margin: 0 auto 10px auto ;
+    }
+}

@@ -116,19 +116,21 @@ body {
   }
 }
 
-.Catalog {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 1fr;
-  grid-template-rows: 0.1fr 1fr;
-  gap: 30px 20px;
-  grid-template-areas:
-    "A A A"
-    "FrutOne FrutTwo FrutThree"
-    "FrutFour FrutFive FrutSix"
-    "FrutSeven FrutEight FrutNine"
-    "btn btn btn";
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
-}
+// .Catalog {
+  
+//   display: grid;
+
+//   grid-template-columns: 1fr 0.5fr 1fr;
+//   grid-template-rows: 0.1fr 1fr;
+//   gap: 30px 20px;
+//   grid-template-areas:
+//     "A A A"
+//     "FrutOne FrutTwo FrutThree"
+//     "FrutFour FrutFive FrutSix"
+//     "FrutSeven FrutEight FrutNine"
+//     "btn btn btn";
+//   max-width: 1440px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
 

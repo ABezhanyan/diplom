@@ -9,7 +9,7 @@ import Content from "./Content/Content";
 const Footer = () => {
     return (
         <>
-            <content>
+            <content className={classes.ShopFood_main}>
                 <div className={classes.ShopFood}>
                     <Content />
                     <Wip />

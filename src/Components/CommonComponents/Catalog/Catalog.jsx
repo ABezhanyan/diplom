@@ -16,17 +16,8 @@ import "./Catalog.scss"
 const Catalog = () => {
     return (
         <div className="Catalog">
-            <CHeader />
-            <CatalogOne />
-            <CatalogTwo />
-            <CatalogThree />
-            <CatalogFour />
-            <CatalogFive />
-            <CatalogSix />
-            <CatalogSeven />
-            <CatalogEight />
-            <CatalogNine />
-            <AllProducts />
+                <CHeader />
+                <CatalogOne />
         </div>
     )
 

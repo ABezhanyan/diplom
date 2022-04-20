@@ -1,23 +1,43 @@
 .FooterShop_main {
-  display: flex;
-  display: grid;
-  justify-content: center;
+  padding-top: 12px;
   height: 88px;
   background: #131313;
 }
 
 .FooterShop {
   display: flex;
-  display: grid;
-  grid-template-columns: 325px 427px 228px;
-  grid-template-rows: 1fr;
-  gap: 0 0;
-  grid-template-areas:
-    "LogoShop NavShop UpShop";
-  justify-content: center;
-  max-width: 1440px;
-  margin-right: auto;
+  justify-content: space-between;
+  // grid-template-columns: 325px 427px 228px;
+  // grid-template-rows: 1fr;
+  // gap: 0 0;
+  // grid-template-areas:
+  //   "LogoShop NavShop UpShop";
+  max-width: 980px;
   margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+@media (max-width: 1024px) {
+  .FooterShop {
+    padding-left: 10px;
+    padding-right: 0px;
+ }
+}
+
+@media (max-width: 764px) {
+  .FooterShop {
+    padding-left: 30px;
+    padding-right: 18px;
+ }
+}
+
+@media (max-width: 600px) {
+  .FooterShop {
+    padding-left: 30px;
+    padding-right: 18px;
+ }
 }
 
 

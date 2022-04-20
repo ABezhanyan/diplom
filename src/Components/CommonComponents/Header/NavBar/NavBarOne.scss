@@ -46,8 +46,124 @@
 }
 
 .myLinkModal_img {
-   width: 35px;
+   width: 30px;
+   fill: red;
+   padding-bottom: 28px;
 }
 
 
+*, *:after, *:before {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+  
+
+}
+
+.container-login:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.container-login {
+   margin: 0 auto;
+   width: 100%;
+   max-width: 960px;
+   padding: 0 15px;
+}
+
+.menu {
+   float: right;
+}
+.menu li {
+   display: inline-block;
+}
+
+.burger_login {
+   display: none;
+}
+
+.menu-li:not(:last-child) {
+   margin-right: 30px;
+}
+
+.menu-li {
+   padding-top: 17px;
+}
+
+.menu-li.sticky {
+   padding-top: 10px;
+   
+}
+
+
+
  
+
+
+
+
+
+@media (max-width: 1050px) {
+
+   
+   .burger_login {
+      display: block;
+      width: 50px;
+      margin-top: 20px;
+   }
+
+   .burger_login.sticky {
+      width: 40px;
+      margin-top: 15px;
+   }
+  
+
+   .menu {
+      max-height: 0;
+      background: white;
+      float: none;
+      position: absolute;
+      overflow: hidden;
+      
+      right: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      z-index: 3;
+   }
+
+   #menu_login {
+      top: 85px;
+   }
+
+   #menu_login_sticky {
+      top: 70px;
+   }
+   
+
+   .menu li {
+      display: block;
+      text-align: center;
+      border-bottom: 1px solid #EBEBE3;
+      margin-right: 0;
+   }
+
+   .active {
+   max-height: 450px;
+ 
+}
+   
+}
+
+@media (max-width: 480px) {
+
+   
+
+   #menu {
+      top: 118px;
+   }
+
+  
+}

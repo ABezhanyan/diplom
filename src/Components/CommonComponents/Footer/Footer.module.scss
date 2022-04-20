@@ -1,22 +1,35 @@
-.ShopFood {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 0.1fr 1fr;
-  gap: 0 0;
-  grid-template-areas:
-    "c n"
-    "nb w";
-  max-width: 980px;
-  margin-left: auto;
-  margin-right: auto;
-
+.ShopFood_main {
+  
 }
 
-.ShopFoodHeader {
+.ShopFood {
   display: flex;
   justify-content: space-between;
-  transition: align-items .2s;
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
+
 }
+
+@media (max-width: 1024px) {
+  .ShopFood {
+    padding-left: 20px;
+    padding-right: 50px;
+ }
+}
+
+@media (max-width: 764px) {
+  .ShopFood {
+    padding-left: 20px;
+    padding-right: 50px;
+ }
+}
+
+// .ShopFoodHeader {
+//   display: flex;
+  
+//   transition: align-items .2s;
+//   max-width: 980px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }

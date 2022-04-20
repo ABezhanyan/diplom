@@ -9,12 +9,16 @@ $(window).scroll(function() {
     if ($(this).scrollTop() > 1){
         $('header').addClass("sticky");
         $('img.img').addClass("sticky");
-        $('div.nav').addClass("sticky");
+        $('#menu_login').attr('id', "menu_login_sticky");
+        $('img.burger_login').addClass("sticky");
+        $('li.menu-li').addClass("sticky");
     }
     else{
         $('header').removeClass("sticky");
         $('img.img').removeClass("sticky");
-        $('div.nav').removeClass("sticky");
+        $("#menu_login_sticky").attr('id', "menu_login");
+        $('img.burger_login').removeClass("sticky");
+        $('li.menu-li').removeClass("sticky");
     }
 });
 

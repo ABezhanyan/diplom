@@ -3,7 +3,7 @@
 }
 
 .contact_form_main {
-    display: flex;
+    
 }
 
 .form_header {
@@ -75,5 +75,17 @@
 }
 
 
+@media (max-width: 600px) {
+    .form_text {
+        width: 350px;
+    }
+    
+    .form_text_last {
+        width: 350px;
+    }
 
-
+    .form_btn {
+        width: 350px;
+    }
+    
+  }

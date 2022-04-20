@@ -26,3 +26,19 @@
     grid-area: SubText;
     margin-top: 50px;
 }
+
+@media (max-width: 600px) {
+
+    .text {
+    
+        font-size: 34px;
+        
+    }
+    
+    .text_two {
+        
+        font-size: 12px;
+        
+    }
+
+  }

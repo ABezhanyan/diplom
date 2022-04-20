@@ -115,14 +115,16 @@ body {
   }
 }
 
-.content{
+.content {
+    width: 100%;
     grid-area: nb;
     margin-top: 210px;
+    max-width: 500px;
 
 }
 
 .text {
-    width: 600px;
+    width: 100%;
     display: flex;
     padding-bottom: 12px;
     font-style: normal;
@@ -139,7 +141,7 @@ body {
 }
 
 .text_two {
-    width: 500px;
+  width: 100%;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -161,4 +163,38 @@ body {
     border-radius: 5px;
     color: #FFFFFF;
 }
+
+@media (max-width: 1024px) {
+  .content {
+    padding-left: 10px; 
+ }
+}
+
+@media (max-width: 764px) {
+  .content {
+    padding-left: 11px;
+
+ }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding-left: 11px;
+ }
+}
+
+@media (max-width: 769px) {
+  .content {
+    margin-top: 120px;
+ }
+
+  .text {
+    font-size: 35px;
+  }
+
+  .text_two {
+    font-size: 20px; 
+  }
+}
+
 

@@ -78,3 +78,9 @@
   width: 95%;
 
 }
+
+@media (max-width: 769px) {
+  .nav {
+    display: none;
+ }
+}
