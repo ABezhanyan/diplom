@@ -17,6 +17,7 @@ import Gallery from './Components/ContactPage/Contact/Contact'
 import GalleryContent from './Components/ContactPage/ContactContent/ContactContent';
 import ContactUSTwo from './Components/ContactPage/ContactUS_page/ContactUSTwo';
 import MapYandex from './Components/ContactPage/Map/MapYandex';
+import ShopHeader from './Components/ShopPage/ShopHeader/ShopHeader';
 
 
 
@@ -36,7 +37,7 @@ const App = () => {
            </div>
                <Routes>
                    <Route path="/" element={<Footer />}></Route>
-                   <Route path="/shop" element={<Footer />}></Route>
+                   <Route path="/shop" element={<ShopHeader />}></Route>
                    <Route path="/about" element={<About />}></Route>
                    <Route path="/contact" element={<Gallery />}></Route>
                </Routes>
@@ -62,7 +63,7 @@ const App = () => {
                    <Route path="/contact" element={<MapYandex />}></Route>
                </Routes>
                <Routes>
-                   <Route path="/" element={<ContactUs />}></Route>
+                   <Route path="/" element={<FooterShop />}></Route>
                    <Route path="/shop" element={<FooterShop />}></Route>
                    <Route path="/about" element={<FooterShop />}></Route>
                    <Route path="/contact" element={<FooterShop />}></Route>

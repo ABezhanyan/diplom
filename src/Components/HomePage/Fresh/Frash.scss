@@ -8,10 +8,16 @@
     "FreshImg FreshText";
   margin-top: 80px;
   justify-content: center;
-  max-width: 1420px;
+  max-width: 980px;
   margin-right: auto;
   margin-left: auto;
 
+}
+
+@media (max-width:1024px) {
+  .Fresh {
+    display: block;
+  }
 }
 
 

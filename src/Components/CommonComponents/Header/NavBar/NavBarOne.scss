@@ -106,17 +106,30 @@
 
 
 @media (max-width: 1050px) {
+   .myLinkModal_img {
+      width: 40px;
+   }
+
+   .menu-li:not(:last-child) {
+      margin-right: 0px;
+   }
+   
+   .menu-li:nth-child(5) {
+      padding-right: 17px;
+   }
 
    
    .burger_login {
       display: block;
       width: 50px;
       margin-top: 20px;
+      transition: all 0.7s ease;
    }
 
    .burger_login.sticky {
       width: 40px;
       margin-top: 15px;
+      transition: all 0.7s ease;
    }
   
 
@@ -134,12 +147,19 @@
       z-index: 3;
    }
 
+   .menu_main {
+      display: flex;
+      justify-content: center;
+   }
+
    #menu_login {
       top: 85px;
+      
    }
 
    #menu_login_sticky {
       top: 70px;
+      
    }
    
 
@@ -151,6 +171,8 @@
    }
 
    .active {
+      
+      
    max-height: 450px;
  
 }
@@ -161,9 +183,7 @@
 
    
 
-   #menu {
-      top: 118px;
-   }
+   
 
   
 }

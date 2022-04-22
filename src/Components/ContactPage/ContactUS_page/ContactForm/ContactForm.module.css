@@ -112,4 +112,8 @@
         
         
     }
+
+    .form_header {
+        display: none;
+    }
   }

@@ -39,6 +39,9 @@ class ContactForm extends React.Component {
     render() {
         return (
             <div className={classes.container}>
+                <div className={classes.form_header}>
+                    Get in touch with us
+                </div>
                 <div className={classes.contact_form_main}>
                     <form className={classes.contact_form} onSubmit={this.handleSubmit}>
                         <div className={classes.form_div}>
@@ -64,3 +67,5 @@ class ContactForm extends React.Component {
 }
 
 export default ContactForm;
+
+

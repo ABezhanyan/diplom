@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    margin-bottom: 50px;
 }
 
 .form_one {
@@ -30,3 +31,11 @@
 
     color: #FFFFFF;
 }
+
+@media (max-width: 600px) {
+
+    .form_one {
+        width: 240px;
+    }
+
+  }

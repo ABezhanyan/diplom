@@ -53,7 +53,8 @@ const NavBar = (props) => {
                 </div>
                 
                 
-                <ul className={switchTOggled ? "menu active" : "menu"} id="menu_login" >
+               <div className="menu_main">
+               <ul className={switchTOggled ? "menu active" : "menu"} id="menu_login" >
                 <li className="menu-li">
                 <NavLink onClick={ToggleSwitch} href="#" to="/" className="NavBar btn">HOME</NavLink>
                 </li>
@@ -71,6 +72,7 @@ const NavBar = (props) => {
                 </button>
                 </li>
                 </ul> 
+               </div>
         
       
 

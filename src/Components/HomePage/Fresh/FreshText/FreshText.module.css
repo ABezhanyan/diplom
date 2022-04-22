@@ -2,7 +2,9 @@
     grid-area: FreshText;
     margin-top: auto;
     margin-bottom: auto;
-
+    padding-left: 30px;
+    padding-right: 30px;
+    
 }
 
 .text {
@@ -40,5 +42,15 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     color: #FFFFFF;
+}
+
+@media (max-width:1024px) {
+    .freshText {
+        padding-top: 15px;
+    }
+
+    .text_three {
+        padding-top: 20px;
+    }
 }
 

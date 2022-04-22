@@ -1,5 +1,6 @@
-.Advantages {
-    display: grid;
+/* .Advantages {
+    
+    
     grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
     grid-template-rows: 0.1fr 1fr;
     gap: 60px 20px;
@@ -9,4 +10,4 @@
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-}
+} */

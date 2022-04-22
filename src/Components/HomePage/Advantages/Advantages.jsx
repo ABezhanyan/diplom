@@ -11,9 +11,6 @@ const Advantages = () => {
         <div className={classes.Advantages}>
             <AHeader />
             <CardOne />
-            <CardTwo />
-            <CardThree />
-            <CardFour />
         </div>
     )
 
