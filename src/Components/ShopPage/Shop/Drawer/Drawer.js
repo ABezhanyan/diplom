@@ -2,69 +2,65 @@ import "./Drawer.scss"
 import remove from "../img/btn-remove.svg"
 import arrow from "../img/arrow.svg";
 
-function Drawer(props) {
+function Drawer({ onClose, onRemove, items = [] }) {
   return (
     <div className="overlay">
       <div className="drawer">
         <h2 className="d-flex justify-between mb-30">
-          Корзина <img onClick={props.onClose} className="cu-p" src={remove} alt="Remove" />
+          Корзина <img onClick={onClose} className="cu-p" src={remove} alt="Close" />
         </h2>
 
-        <div className="items">
-          <div className="cartItem d-flex align-center mb-20">
-            <div
-              style={{ backgroundImage: 'url(/img/sneakers/1.jpg)' }}
-              className="cartItemImg"></div>
+        {items.length > 0 ? (
+          <div>
+            <div className="items">
+              {items.map((obj) => (
+                <div className="cartItem d-flex align-center mb-20">
+                  <div
+                    style={{ backgroundImage: `url(${obj.imageUrl})` }}
+                    className="cartItemImg"></div>
 
-            <div className="mr-20 flex">
-              <p className="mb-5">Мужские Кроссовки Nike Air Max 270</p>
-              <b>12 999 руб.</b>
+                  <div className="mr-20 flex">
+                    <p className="mb-5">{obj.title}</p>
+                    <b>{obj.price} руб.</b>
+                  </div>
+                  <img
+                    onClick={() => onRemove(obj.id)}
+                    className="removeBtn"
+                    src={remove}
+                    alt="Remove"
+                  />
+                </div>
+              ))}
             </div>
-            <img className="removeBtn" src="/img/btn-remove.svg" alt="Remove" />
-          </div>
-
-          <div className="cartItem d-flex align-center mb-20">
-            <div
-              style={{ backgroundImage: 'url(/img/sneakers/1.jpg)' }}
-              className="cartItemImg"></div>
-
-            <div className="mr-20 flex">
-              <p className="mb-5">Мужские Кроссовки Nike Air Max 270</p>
-              <b>12 999 руб.</b>
+            <div className="cartTotalBlock">
+              <ul>
+                <li>
+                  <span>Итого:</span>
+                  <div></div>
+                  <b>21 498 руб. </b>
+                </li>
+                <li>
+                  <span>Налог 5%:</span>
+                  <div></div>
+                  <b>1074 руб. </b>
+                </li>
+              </ul>
+              <button className="greenButton">
+                Оформить заказ <img src={arrow} alt="Arrow" />
+              </button>
             </div>
-            <img className="removeBtn" src="/img/btn-remove.svg" alt="Remove" />
           </div>
-
-          <div className="cartItem d-flex align-center">
-            <div
-              style={{ backgroundImage: 'url(/img/sneakers/1.jpg)' }}
-              className="cartItemImg"></div>
-
-            <div className="mr-20 flex">
-              <p className="mb-5">Мужские Кроссовки Nike Air Max 270</p>
-              <b>12 999 руб.</b>
-            </div>
-            <img className="removeBtn" src="/img/btn-remove.svg" alt="Remove" />
+        ) : (
+          <div class="cartEmpty d-flex align-center justify-center flex-column flex">
+            <img class="mb-20" width="120px" height="120px" src="/img_card/empty-cart.jpg" alt="Empty" />
+            <h2>Корзина пустая</h2>
+            <p class="opacity-6">Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ.</p>
+            <button onClick={onClose} class="greenButton">
+              <img src={arrow} alt="Arrow" />
+             Вернуться назад
+            </button>
           </div>
-        </div>
-
-        <div className="cartTotalBlock">
-          <ul>
-            <li>
-              <span>Итого:</span>
-              <div></div>
-              <b>21 498 руб. </b>
-            </li>
-            <li>
-              <span>Налог 5%:</span>
-              <div></div>
-              <b>1074 руб. </b>
-            </li>
-          </ul>
-          <button className="greenButton">
-            Оформить заказ <img src={arrow} alt="Arrow" />
-          </button>
-        </div>
+        )}
       </div>
     </div>
   );

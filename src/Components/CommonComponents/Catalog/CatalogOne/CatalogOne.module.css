@@ -11,9 +11,7 @@
     transition: all 0.6s ease-in-out;
 }
 
-.Card:hover {
 
-}
 
 .img {
     border-radius: 18px;
@@ -62,6 +60,46 @@
     color: #FFFFFF;
 }
 
+.btn_card {
+    width: 50px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    
+}
+
+.btn_card_main {
+    margin: 0 auto;
+}
+
+.header_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #131313;
+}
+
+.header {
+    grid-area: A;
+    margin-top: 80px;
+}
+
+@media (max-width: 1440px) {
+    .header {
+        margin-top: 80px;
+    }
+
+    .header_text {
+        font-size: 30px;
+    }
+
+}
+
 
 .section {
   margin: 60px 0 /* внешние отступы для блока - сверху и снизу по 60px, слева и справа по 0px */;
@@ -107,9 +145,11 @@
 /* Адаптивность */
 
 @media (max-width: 1024px) {
-  .catalog__col {
-    
-  }
+    .btn_card {
+        margin-top: 10px;
+    }
+  
+  
 
   .img {
       
@@ -168,7 +208,13 @@
     .img {
       height: 300px;
       }
+
+      .btn_card {
+        margin-top: 35px;
+    }
   }
+
+  
 
 
 
@@ -185,9 +231,11 @@
 }
 
 @media (max-width: 600px) {
-    .catalog__col {
-      
+    .btn_card {
+        margin-top: 35px;
     }
+    
+    
   
     .img {
       height: 250px;
