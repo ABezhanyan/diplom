@@ -1,23 +1,79 @@
 import "../../../App.css"
 import CHeader from "./CHeader/CHeader";
 import CatalogOne from "./CatalogOne/CatalogOne";
-import CatalogTwo from "./CatalogTwo/CatalogTwo";
-import CatalogThree from "./CatalogThree/CatalogThree";
-import CatalogFour from "./CatalogFour/CatalogFour";
-import CatalogFive from "./CatalogFive/CatalogFive";
-import CatalogSix from "./CatalogSix/CatalogSix";
-import CatalogSeven from "./CatalogSeven/CatalogSeven";
-import CatalogEight from "./CatalogEight/CatalogEight";
-import CatalogNine from "./CatalogNine/CatalogNine";
-import AllProducts from "./CatalogAllProducts/AllProducts";
 import "./Catalog.scss"
 
 
-const Catalog = () => {
+
+
+const arr = [
+    {
+      title: 'Blackcurrant',
+      price: 6.50,
+      imageUrl: 'img/OneCard.jpg',
+    },
+    { 
+        title: 'Strawberry', 
+        price: 5.40, 
+        imageUrl: 'img/TwoCard.jpg' 
+    },
+    {
+      title: 'Peach',
+      price: 4.60,
+      imageUrl: 'img/ThreeCard.png',
+    },
+    {
+      title: 'Pomegranate',
+      price: 8.50,
+      imageUrl: 'img/FourCard.jpg',
+    },
+    {
+      title: 'Pepper',
+      price: 2.30,
+      imageUrl: 'img/FiveCard.jpg',
+    },
+    {
+      title: 'Limon',
+      price: 8.30,
+      imageUrl: 'img/SixCard.jpg',
+    },
+    {
+      title: 'Orange',
+      price: 5.20,
+      imageUrl: 'img/SevenCard.jpg',
+    },
+    {
+      title: 'Tangerine',
+      price: 3.37,
+      imageUrl: 'img/EightCard.jpg',
+    },
+    {
+      title: 'Tomato',
+      price: 5.50,
+      imageUrl: 'img/NineCard.jpg',
+    },
+
+  ];
+
+
+
+const Catalog = (props) => {
     return (
         <div className="Catalog">
                 <CHeader />
-                <CatalogOne />
+
+                <div className="catalog_items">
+                    <div className="catalog_items_col">
+                        {arr.map((obj) => (
+                        <CatalogOne
+                            title={obj.title}
+                            price={obj.price}
+                            imageUrl={obj.imageUrl}
+
+                        />
+                        ))}
+                    </div>
+                </div>
         </div>
     )
 

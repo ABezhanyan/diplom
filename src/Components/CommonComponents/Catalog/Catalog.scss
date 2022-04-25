@@ -116,21 +116,16 @@ body {
   }
 }
 
-// .Catalog {
+.catalog_items {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1040px;
   
-//   display: grid;
+}
 
-//   grid-template-columns: 1fr 0.5fr 1fr;
-//   grid-template-rows: 0.1fr 1fr;
-//   gap: 30px 20px;
-//   grid-template-areas:
-//     "A A A"
-//     "FrutOne FrutTwo FrutThree"
-//     "FrutFour FrutFive FrutSix"
-//     "FrutSeven FrutEight FrutNine"
-//     "btn btn btn";
-//   max-width: 1440px;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
+.catalog_items_col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 

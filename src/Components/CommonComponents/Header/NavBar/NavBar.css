@@ -197,4 +197,16 @@
 
 }
 
+.cu-p {
+  cursor: pointer;
+}
+
+.market {
+  width: 30px;
+}
+
+
+.market_price {
+  bottom: 50px;
+}
 

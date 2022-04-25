@@ -1,8 +1,17 @@
+/* eslint-disable jsx-a11y/alt-text */
 import classes from "./HeaderM.module.scss";
 import "./HeaderM.css"
 import Logo from "./Logo/Logo"
-import NavBar from "./NavBar/NavBar"
+
 import $ from "jquery";
+import {NavLink} from "react-router-dom";
+import { useState } from "react";
+import burger from "./img/burger.svg"
+import login from './img/login.svg'
+import "../Header/NavBar/NavBar.css";
+import "../Header/NavBar/NavBarOne.scss";
+import Login from "../Login/Login";
+import market from "./img/market.svg"
 
 
 $(window).scroll(function() {
@@ -23,13 +32,87 @@ $(window).scroll(function() {
 });
 
 
-const HeaderM = () => {
+const HeaderM = (props) => {
+
+    $(document).ready(function($) {
+        $('.popup-open').click(function() {
+                $('.popup-fade').fadeIn();
+                return false;
+        });	
+        
+        $('.popup-close').click(function() {
+                $(this).parents('.popup-fade').fadeOut();
+                return false;
+        });		
+
+        $(document).keydown(function(e) {
+                if (e.keyCode === 27) {
+                        e.stopPropagation();
+                        $('.popup-fade').fadeOut();
+                }
+        });
+        
+        $('.popup-fade').click(function(e) {
+                if ($(e.target).closest('.popup').length === 0) {
+                        $(this).fadeOut();					
+                }
+        });	
+});
+
+const [switchTOggled, setSwitchTOggled] = useState(false);
+
+const ToggleSwitch = () => {
+        switchTOggled ? setSwitchTOggled(false) : setSwitchTOggled(true);
+};
+    
     return (
         <>
             <header>
                 <div className={classes.ShopFoodHeader}>
                     <Logo />
-                    <NavBar />
+                    <div>
+               
+                <div onClick={ToggleSwitch} className="burger_login_main" >
+                        <img className="burger_login" alt="" src={burger}/>
+                </div>
+                
+                
+               <div className="menu_main">
+               <ul className={switchTOggled ? "menu active" : "menu"} id="menu_login" >
+                <li className="menu-li">
+                <NavLink onClick={ToggleSwitch} href="#" to="/" className="NavBar btn">HOME</NavLink>
+                </li>
+                <li className="menu-li">
+                <NavLink onClick={ToggleSwitch} href="#" to="/shop" className="NavBar btn">SHOP</NavLink>
+                </li>
+                <li className="menu-li">
+                <NavLink onClick={ToggleSwitch} href="#" to="/about" className="NavBar btn">ABOUT</NavLink>
+                </li>
+                <li className="menu-li">
+                <NavLink onClick={ToggleSwitch} href="#" to="/contact" className="NavBar btn">CONTACT</NavLink>
+                </li>
+                <li className="menu-li">
+                <button className="popup-open" href="#"><img className="myLinkModal_img" alt="login" src={login}/>
+                </button>
+                </li>
+                <li onClick={props.onClickCart} className="menu-li cu-p">
+                    <img src={market} alt="market" className="myLinkModal_img"/>
+                    {/* <span className="market_price">1205 руб.</span> */}
+                </li>
+                </ul> 
+               </div>
+        
+      
+
+                <div className="popup-fade">
+                        <div className="popup">
+                                        <Login />
+                        </div>
+                
+                </div>
+              
+                
+        </div>
                 </div>
             </header>
         </>

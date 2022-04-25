@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom";
 import { useState } from "react";
-import classes from './Logo.module.css'
+
 import logo from '../img/logo.svg'
 import "../NavBar/NavBarOne.scss"
 

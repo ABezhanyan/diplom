@@ -1,12 +1,13 @@
 import "./Drawer.scss"
+import remove from "../img/btn-remove.svg"
+import arrow from "../img/arrow.svg";
 
-
-function Drawer() {
+function Drawer(props) {
   return (
-    <div style={{ display: 'none' }} className="overlay">
+    <div className="overlay">
       <div className="drawer">
         <h2 className="d-flex justify-between mb-30">
-          Корзина <img className="cu-p" src="/img/btn-remove.svg" alt="Remove" />
+          Корзина <img onClick={props.onClose} className="cu-p" src={remove} alt="Remove" />
         </h2>
 
         <div className="items">
@@ -61,7 +62,7 @@ function Drawer() {
             </li>
           </ul>
           <button className="greenButton">
-            Оформить заказ <img src="/img/arrow.svg" alt="Arrow" />
+            Оформить заказ <img src={arrow} alt="Arrow" />
           </button>
         </div>
       </div>

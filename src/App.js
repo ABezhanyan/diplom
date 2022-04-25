@@ -6,7 +6,7 @@ import Catalog from "./Components/CommonComponents/Catalog/Catalog";
 import Fresh from "./Components/HomePage/Fresh/Fresh";
 import Reviews from "./Components/HomePage/Reviews/Reviews";
 import Subscribe from "./Components/HomePage/Subscribe/Subscribe";
-import ContactUs from "./Components/HomePage/ContactUs/ContactUs";
+
 import HeaderM from "./Components/CommonComponents/Header/HeaderM";
 import Footer from "./Components/CommonComponents/Footer/Footer";
 import FooterShop from "./Components/ShopPage/FooterShop/FooterShop";
@@ -18,21 +18,33 @@ import GalleryContent from './Components/ContactPage/ContactContent/ContactConte
 import ContactUSTwo from './Components/ContactPage/ContactUS_page/ContactUSTwo';
 import MapYandex from './Components/ContactPage/Map/MapYandex';
 import ShopHeader from './Components/ShopPage/ShopHeader/ShopHeader';
+import Drawer from './Components/ShopPage/Shop/Drawer/Drawer';
+import React from 'react';
 
 
 
 
 const App = () => {
+    
+    const [cardOpened, setCartOpened] = React.useState(false);
+
+
   return (
    <BrowserRouter>
        <div className="mom">
            <div>
                <Routes>
-                   <Route path="/" element={<HeaderM />}></Route>
-                   <Route path="/shop" element={<HeaderM />}></Route>
-                   <Route path="/about" element={<HeaderM />}></Route>
-                   <Route path="/gallery" element={<HeaderM />}></Route>
-                   <Route path="/contact" element={<HeaderM />}></Route>
+                   <Route path="/" element={<HeaderM onClickCart={() => setCartOpened(true)}/>}></Route>
+                   <Route path="/shop" element={<HeaderM onClickCart={() => setCartOpened(true)} />}></Route>
+                   <Route path="/about" element={<HeaderM onClickCart={() => setCartOpened(true)}/>}></Route>
+                   {/* <Route path="/gallery" element={<HeaderM />}></Route> */}
+                   <Route path="/contact" element={<HeaderM onClickCart={() => setCartOpened(true)}/>}></Route>
+               </Routes>
+               <Routes>
+                    <Route path='/' element={cardOpened && <Drawer onClose={() => setCartOpened(false)} />}></Route>
+                    <Route path='/shop' element={cardOpened && <Drawer onClose={() => setCartOpened(false)} />}></Route>
+                    <Route path='/about' element={cardOpened && <Drawer onClose={() => setCartOpened(false)} />}></Route>
+                    <Route path='/contact' element={cardOpened && <Drawer onClose={() => setCartOpened(false)} />}></Route>
                </Routes>
            </div>
                <Routes>
@@ -45,6 +57,7 @@ const App = () => {
                    <Route path="/" element={<Advantages />}></Route>
                    <Route path="/about" element={<AboutContent />}></Route>
                    <Route path="/contact" element={<GalleryContent />}></Route>
+                   
                </Routes>
                <Routes>
                    <Route path="/" element={<Catalog />}></Route>
@@ -69,6 +82,7 @@ const App = () => {
                    <Route path="/contact" element={<FooterShop />}></Route>
 
                </Routes>
+               
        </div>
    </BrowserRouter>
   );
