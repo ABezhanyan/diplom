@@ -31,6 +31,11 @@ const CatalogOne = ({title, imageUrl, price, onPluse}) => {
                             onClick={onClickPlus} 
                             src={isAdded ? '/img_card/btn-checked.svg' : "/img_card/btn-plus.svg"} 
                             alt=" "/>
+                            <img 
+                            className={classes.btn_card_two} 
+                            onClick={onClickPlus} 
+                            src={isAdded ? '/img_card/liked.svg' : "/img_card/unliked.svg"} 
+                            alt=" "/>
                           </div>
                     </div>
                   </div>

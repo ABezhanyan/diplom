@@ -61,9 +61,18 @@
 }
 
 .btn_card {
-    width: 50px;
+    width: 60px;
     float: right;
     margin-right: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    
+}
+
+.btn_card_two {
+    width: 60px;
+    float: left;
+    margin-left: 20px;
     margin-top: 30px;
     cursor: pointer;
     

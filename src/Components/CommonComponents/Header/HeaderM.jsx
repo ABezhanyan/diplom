@@ -91,9 +91,8 @@ const ToggleSwitch = () => {
                 <li className="menu-li">
                 <NavLink onClick={ToggleSwitch} href="#" to="/contact" className="NavBar btn">CONTACT</NavLink>
                 </li>
-                <li className="menu-li">
-                <button className="popup-open" href="#"><img className="myLinkModal_img" alt="login" src={login}/>
-                </button>
+                <li className="menu-li popup-open">
+                        <img className="myLinkModal_img" alt="login" src={login}/>
                 </li>
                 <li onClick={props.onClickCart} className="menu-li cu-p">
                     <img src={market} alt="market" className="myLinkModal_img"/>
